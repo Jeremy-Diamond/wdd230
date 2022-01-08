@@ -1,0 +1,41 @@
+
+/* 
+Colors for later https://coolors.co/41521f-fffcf9-101d42-d84727
+*/
+
+body{
+    justify-items: center;
+    font-size: 16px;
+    max-width: 475px;
+    padding: 10px;
+    font-family: 'Secular One', sans-serif;
+    background-color: #fffcf9 ;
+    color: #101d42;
+    margin: auto;
+}
+
+header{
+    display: flex;
+    border-radius: 8px;
+    background-color: #101d42;
+    color: #fffcf9;
+    align-items: center;
+    padding: 20px;
+    gap: 40px;
+}
+
+footer{
+    border-radius: 8px;
+    background-color: #101d42;
+    color: #fffcf9;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+h2{
+    border-bottom: 5px solid #101d42;
+    color: #101d42;
+}
+

@@ -1,0 +1,110 @@
+
+/* 
+Colors for later https://coolors.co/41521f-ebf2fa-2E86AB-d84727
+*/
+
+/*
+font-family: 'Playfair Display', serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    justify-items: center;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 10px;
+    font-family: 'Playfair Display', serif;
+    background-color: #EFE9E6;
+    color: #2B2D42;
+}
+
+main{
+    padding: 10px;
+}
+
+h1, h2, h3,h4, nav{
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+}
+
+header, footer{
+    border-radius: 8px;
+    background-color: #8F7D5E;
+    color: #ebf2fa;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+footer{
+    border-radius: 10px 10px 10px 10px;
+}
+
+
+nav{
+    background-color:#A61C3C ;
+    margin: 0 auto;
+    border-radius: 0px 0px 10px 10px;    
+}
+nav ul {
+    overflow: hidden;
+    list-style-type: none;
+    
+}
+
+
+nav ul li a{
+    display: block;
+    color:#ebf2fa;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.75rem;
+    font-size: 0.95rem;
+    background: linear-gradient(90deg, transparent, #EFE9E6, transparent) top / var(--d, 0) 100% no-repeat;
+    transition: 0.5s;
+}
+
+nav a:hover {
+    /* 	background-color: #bbb;
+color: #36454f; */
+    --d: 100%;
+    color:#2B2D42
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+h2{
+    font-size: 1rem;
+}
+
+h3{
+    color: #2B2D42;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+
+}
+#colorswatch{
+    max-width: 75%;
+}
+
+p, a {
+    padding: 10px;
+}
+
+main ul{
+    padding: 20px;
+}
+
+
+section img{
+    max-width: 200px;
+    border:#2E86AB 10px solid ;
+}

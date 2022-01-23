@@ -1,0 +1,15 @@
+@media only screen and (min-width: 32.5em){
+    nav ul{
+        display: flex;
+        
+    }
+
+    nav ul li{
+        flex: 1 1 auto;
+    }
+
+    nav ul li a{
+        font-size: 1.25rem;
+    }
+
+}

@@ -1,10 +1,11 @@
 
-/*
+
 h1, p {margin: 0 2vw;}
 
 body{
     font-family: 'Open Sans', sans-serif;
     background-color:#EFE9E6 ;
+    font-size: 16px;
 }
 
 header{
@@ -13,25 +14,48 @@ header{
     align-items: center;
     justify-content: space-between;
 }
+footer{
+    background-color: #054A91;
+    color: #F0F3F5;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+#footerInfo{
+    margin: auto 0;
+}
+#myInfo{
+    border-top: solid #F0F3F5 2px;
+    padding: 5px;
+    justify-content: center;
+
+}
+
+footer section{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
 
 h1,h2,h3,h4{
     font-family: 'Playfair Display SC', serif;    
 }
 
-#logobox{
+.logobox{
     display: flex;
     align-items: center;
     justify-content: start;
     color: #EFE9E6;  
 }
 
-#logobox img{
+.logobox img{
     border-radius: 10px;
     margin: 10px;
     height: 150px;
 }
-*/
-nav {
+
+nv {
 	margin: 0 auto;
 	max-width: 760px;
 	background-color: tomato;

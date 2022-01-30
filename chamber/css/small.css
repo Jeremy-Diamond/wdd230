@@ -1,0 +1,76 @@
+
+/*
+h1, p {margin: 0 2vw;}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color:#EFE9E6 ;
+}
+
+header{
+    background-color: #054A91;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1,h2,h3,h4{
+    font-family: 'Playfair Display SC', serif;    
+}
+
+#logobox{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: #EFE9E6;  
+}
+
+#logobox img{
+    border-radius: 10px;
+    margin: 10px;
+    height: 150px;
+}
+*/
+nav {
+	margin: 0 auto;
+	max-width: 760px;
+	background-color: tomato;
+}
+.primaryNav {
+	list-style: none;
+	padding: 0;
+}
+.primaryNav li:first-child {
+	display: block;
+}
+.primaryNav li {
+	display: none;
+}
+.primaryNav a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.primaryNav a.hamburgerBtn::before {
+	content: "🍔asdfadsf ";
+}
+
+.primaryNav a:hover {
+	color: white;
+	background-color: black;
+}
+
+
+.responsive li {
+	display: block;
+}
+
+.responsive a.hamburgerBtn::before {
+	content: "❌ ";
+}

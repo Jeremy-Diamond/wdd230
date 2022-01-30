@@ -1,0 +1,15 @@
+@media only screen and (min-width: 32.5em) {
+	.primaryNav {
+		display: flex;
+	}
+	.primaryNav li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.primaryNav a {
+		text-align: center;
+	}
+	.primaryNav li:first-child {
+		display: none;
+	}
+}

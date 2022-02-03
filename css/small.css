@@ -52,3 +52,12 @@ h2{
     font-size: 1rem;
 }
 
+main ul li{
+    display: flex;
+}
+
+main ul li a{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+

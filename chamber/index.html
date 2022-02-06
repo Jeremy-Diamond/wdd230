@@ -18,16 +18,18 @@
 </head>
 <body>
     <header>
-        <section class=logobox>
-            <a href="index.html"><img src="images/DiamondCity.png" alt="Diamond City Logo"></a>
-            <div>
-            <h1>Diamond City</h1>
-            <h2>Chamber of Commerce</h2>
-            </div>
-        </section>
-
-        <span id="date"></span>
-        <nav>
+        <div class="headerbar">
+            <section class=logobox>
+                <a href="index.html"><img src="images/DiamondCity.png" alt="Diamond City Logo"></a>
+                <div id="chambertext">
+                <h1>Diamond City</h1>
+                <h2>Chamber of Commerce</h2>
+                </div>
+            </section>
+            <div id="socialMedia">
+                <a href="https://facebook.com" target="blank"><img src="images/facebook.png" alt="Facebook Logo" width="30"></a>
+                <a href="https://twitter.com" target="blank"><img src="images/twitter.png" alt="Twitter Logo" width="30"></a>
+            </div>    
             <ul class="primaryNav">
                 <li><a class="hambugerBtn" href="#">&#9776;</a></li>
                 <li><a href="index.html">Home</a></li>
@@ -35,48 +37,44 @@
                 <li><a href="#">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div id="socialMedia">
-            <a href="https://facebook.com" target="blank"><img src="images/facebook.png" alt="Facebook Logo" width="70"></a>
-            <a href="https://twitter.com" target="blank"><img src="images/twitter.png" alt="Twitter Logo" width="70"></a>
-        </div>        
+            </ul>       
+        </div>
+        <span id="date"></span>        
     </header>
     <main>
         <div class="hero">
-            HERO
+            <img src="images/diamondcityscape.jpg" alt="Diamond City Skape">
         </div>
         <div class="event">
-            event
+            <img src="https://via.placeholder.com/300x300.png?text=Event placeholder" alt="Event picture">
         </div>
         <div class="weather">
-            weather
+            <img src="https://via.placeholder.com/300x300.png?text=Weather placeholder" alt="Event picture">
         </div>
         <div class="news">
-            news
+            <img src="https://via.placeholder.com/300x300.png?text=news placeholder" alt="Event picture">
         </div>
         <div class="join">
-            join
+            <img src="https://via.placeholder.com/300x300.png?text=Join placeholder" alt="Event picture">
         </div>
     </main>
     <footer>
-        <section >
-            <div class=logobox>
+            <div class="logobox">
                 <a href="index.html"><img src="images/DiamondCity.png" alt="Diamond City Logo"></a>
-                <div>
-                <h1>Diamond City</h1>
-                <p> Diamond City Chamber</p>
-                <p>987 South Ensign Drive</p>
-                <p>Saratoga Springs, UT 84045</p>
-                </div>
             </div>
-            <div id=footerInfo>
+                <div id="chamberaddress">
+                    <h1>Diamond City</h1>
+                    <p> Diamond City Chamber</p>
+                    <p>987 South Ensign Drive</p>
+                    <p>Saratoga Springs, UT 84045</p>
+                </div>
+            
+            <div id="footerInfo">
                 <p> infor@diamondchamber.com</p>
                 <p>+(801)444-5545</p>
                 <p>Location</p>
             </div>
-        </section>
-        <section id=myInfo>
+        <section id="myInfo">
             <span id="currentYear"></span>Diamond City Chamber | Jeremy Diamond | WDD230 Project | 
             <br>
             <span id="lastUpdated"></span>

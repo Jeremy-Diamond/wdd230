@@ -1,6 +1,6 @@
 
 
-h1, p {margin: 0 2vw;}
+h1, h2, p {margin: 0 2vw;}
 
 body{
     font-family: 'Open Sans', sans-serif;
@@ -10,32 +10,70 @@ body{
 
 header{
     background-color: #054A91;
+    color: #F0F3F5;
+}
+
+.headerbar{
     display:flex;
     align-items: center;
     justify-content: space-between;
 }
+
+#chambertext{
+    display: none;
+}
+
+.socialMedia{
+    order: 2;
+}
+
+#date{
+    display: flex;
+    justify-content: center;
+    background-color: #054A91;
+    border-top:#F0F3F5 solid 2px ;
+    padding: .5em;
+}
+/*---------- Main ---------------  */
+
+main{
+    margin: 10px;
+    display: grid;
+    grid-gap: 1rem;
+    justify-content: center;
+    align-content: center;
+}
+
+main div{
+    background-color: #054A91;
+}
+
+main div img{
+    justify-items: center;
+    text-align: center;
+    margin: .5rem;
+    width: 90%;
+}
+
+
+/*---------- footer ---------------  */
+
+
 footer{
     background-color: #054A91;
     color: #F0F3F5;
     font-size: 1rem;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+    flex-direction: column;
 }
-#footerInfo{
-    margin: auto 0;
-}
+
 #myInfo{
     border-top: solid #F0F3F5 2px;
     padding: 5px;
     justify-content: center;
 
-}
-
-footer section{
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
 }
 
 h1,h2,h3,h4{
@@ -45,7 +83,7 @@ h1,h2,h3,h4{
 .logobox{
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     color: #EFE9E6;  
 }
 
@@ -55,11 +93,6 @@ h1,h2,h3,h4{
     height: 150px;
 }
 
-nv {
-	margin: 0 auto;
-	max-width: 760px;
-	background-color: tomato;
-}
 .primaryNav {
 	list-style: none;
 	padding: 0;
@@ -70,24 +103,27 @@ nv {
 .primaryNav li {
 	display: none;
 }
+
 .primaryNav a {
 	display: block;
 	padding: 0.75rem;
 	text-align: left;
 	text-decoration: none;
-	color: black;
+	color: #F0F3F5;
 	font-weight: 700;
 	transition: 0.5s;
 	font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 
-.primaryNav a.hamburgerBtn::before {
-	content: "🍔asdfadsf ";
-}
+
 
 .primaryNav a:hover {
 	color: white;
 	background-color: black;
+}
+
+.primaryNav a:active{
+    border:#F0F3F5 solid 2px ;
 }
 
 
@@ -95,6 +131,5 @@ nv {
 	display: block;
 }
 
-.responsive a.hamburgerBtn::before {
-	content: "❌ ";
-}
+
+

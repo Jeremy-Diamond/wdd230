@@ -12,4 +12,9 @@
 	.primaryNav li:first-child {
 		display: none;
 	}
+
+	#chambertext{
+		display: block;
+		text-align: left;
+	}
 }

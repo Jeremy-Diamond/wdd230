@@ -3,6 +3,35 @@
         padding: .5rem 1rem;
     } 
 
+    body{
+        font-size: 1em;
+    }
+
+    .primaryNav {
+		display: flex;
+	}
+	.primaryNav li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.primaryNav a {
+		text-align: center;
+	}
+	.primaryNav li:first-child {
+		display: none;
+	}
+
+    #socialMedia{
+        order:1;
+        margin: 15px;
+    }
+
+	body{
+		max-width: 1200px;
+		margin: auto;
+	}
+
+
     main{
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
@@ -20,6 +49,9 @@
 		grid-column: 2/4;
         grid-row: 3/4;
 	}
+	.weather{
+		grid-column: 1/2;
+	}
 
 	.spotlightcontainer{
 		justify-content: space-around;
@@ -29,7 +61,7 @@
 	}
 	.join{
         grid-column: 1/2;
-        grid-row: 3/4;
+		grid-row: 3/4;
 	}
 
     #spotlight3{

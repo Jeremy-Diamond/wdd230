@@ -2,6 +2,10 @@
 
 h1, h2, p {margin: 0 2vw;}
 
+h2{
+    font-size: 1.35em;
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
     background-color:#F0F3F5 ;
@@ -19,13 +23,22 @@ header{
     justify-content: space-between;
 }
 
+#meetingbanner{
+    text-align: center;
+    padding: 10px;
+    background-color: #ffcc29;
+    display: none;
+}
+
 #chambertext{
     display: none;
 }
 
 .socialMedia{
     order: 2;
+    padding: 10px;
 }
+
 
 #date{
     display: flex;
@@ -37,31 +50,71 @@ header{
 /*---------- Main ---------------  */
 
 main{
-    margin-top: 1rem;
+    margin-top: .5rem;
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 1rem;
+    grid-gap: .5rem;
     justify-content: center;
     align-content: center;
 }
 
 main div{
     background-color: #054A91;
+    color: #F0F3F5;
     display: flex;
+    flex-direction: column;
+    text-align: center;
     padding: .5rem;
+    align-items: center;
 }
 
-main div img{
-    justify-items: center;
-    text-align: center;
-    margin: auto;
+.hero{
+    background-color: #054A91;
+    position: relative;
+}
+
+.hero img{
     width: 100%;
 }
+
+.joinNow{
+        position: absolute;
+        bottom: 25px;
+        right: 50px;
+        background-color: #ed3237;
+        opacity: .75;
+        padding: 1.5rem;
+        box-shadow: 0 0 30px #333;
+        border-radius: 10px;     
+}
+
+.join h2{
+    background-color: #ed3237;
+    padding: 1.5rem;
+    box-shadow: 0 0 30px #333;
+    border-radius: 10px;
+    margin: .75rem;     
+}
+
 
 
 .spotlightcontainer{
     display: flex;
     flex-direction: column;
+}
+
+.spotlightcontainer img{
+    margin: 5px;
+}
+
+#spotlight1, #spotlight2 ,#spotlight3{
+    border: #F0F3F5 2px solid;
+    margin:.5rem;
+    width: 90%;
+}
+
+.spotcontact{
+   border-top: #F0F3F5 solid 2px;
 }
 
 #spotlight3{
@@ -72,6 +125,12 @@ main div img{
     display:none
 }
 
+.weather div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+}
+
 
 /*---------- footer ---------------  */
 
@@ -80,13 +139,20 @@ footer{
     background-color: #054A91;
     color: #F0F3F5;
     font-size: 1rem;
-    display: flex;
     justify-content: center;
-    text-align: center; 
+    text-align: left;
+    margin-top: .5em; 
+}
+
+#chamberfooter{
+    display: flex;
     flex-direction: column;
+    align-items: center; 
+    text-align: center;
 }
 
 #myInfo{
+    display: flex;
     border-top: solid #F0F3F5 2px;
     padding: 5px;
     justify-content: center;
@@ -122,6 +188,7 @@ h1,h2,h3,h4{
 }
 
 .primaryNav a {
+    margin: 15px;
 	display: block;
 	padding: 0.75rem;
 	text-align: left;
@@ -130,6 +197,9 @@ h1,h2,h3,h4{
 	font-weight: 700;
 	transition: 0.5s;
 	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+.hambugerBtn{
+    font-size: 5rem;
 }
 
 

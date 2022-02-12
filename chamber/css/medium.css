@@ -1,21 +1,11 @@
 @media only screen and (min-width: 32.5em) {
-	.primaryNav {
-		display: flex;
-	}
-	.primaryNav li {
-		display: block; /* change state in small view */
-		flex: 1 1 auto;
-	}
-	.primaryNav a {
-		text-align: center;
-	}
-	.primaryNav li:first-child {
-		display: none;
-	}
 
 	#chambertext{
 		display: block;
 		text-align: left;
+	}
+	body{
+		font-size: .8rem;
 	}
 
 	main{
@@ -47,5 +37,10 @@
 		grid-column: 1/3;
 	}
 
+	
+#chamberfooter{
+    flex-direction: row;
+    justify-content: space-around;
+}
 
 }

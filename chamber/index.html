@@ -8,19 +8,26 @@
     <meta name="description" content="Home page for the Diamond City Chamber of Commerce">
     <link rel="shortcut icon" href="diamondfavicon2.ico">
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="css/small.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
     <link href="css/medium.css" rel="stylesheet">
     <link href="css/large.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display+SC&display=swap" rel="stylesheet">
+    <script defer src=js/getdates.js></script>
+    <script defer src="js/hamburgerScripts.js"></script>
+    <script defer src="js/banner.js"></script>
+    <script defer src="js/weather.js"></script>
     <title>Diamond City Chamber of Commerce</title>
 </head>
 <body>
     <header>
+        <div id="meetingbanner">
+            🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+        </div>
         <div class="headerbar">
             <section class=logobox>
-                <a href="index.html"><img src="images/DiamondCity.png" alt="Diamond City Logo"></a>
+                <a href="index.html"><img src="images/diamondcity.Webp" alt="Diamond City Logo"></a>
                 <div id="chambertext">
                 <h1>Diamond City</h1>
                 <h2>Chamber of Commerce</h2>
@@ -43,56 +50,91 @@
     </header>
     <main>
         <div class="hero">
-            <img src="images/diamondcityscape.jpg" alt="Diamond City Skape">
+            <picture>
+                <source media="(max-width:200px" srcset="images/wdd230smallorg.jpg">
+                <source media="(max-width:1020px" srcset="images/wdd230mediumwide.jpg">
+                <source media="(max-width:2000px" srcset="images/wdd230largecrop.jpg">
+                <img src="images/wdd230-org.jpg" alt="Three people meeting at a desk">
+            </picture>
+            <div class="joinNow">Join Now!</div>
         </div>
         <div class="event">
-            <img src="https://via.placeholder.com/200x200.png?text=Event placeholder" alt="Event picture">
+            <h2>Ribbon Cutting</h2>
+            <h3>💎 The Diamond Shack 💎</h3>
+            <p>Join us for the grand opening of The Diamond Shack, Thursday at 1:00 p.m.</p>           
         </div>
         <div class="weather">
-            <img src="https://via.placeholder.com/200x200.png?text=Weather placeholder" alt="Weather Picture">
+            <h2>Weather</h2>
+            <div>
+                <img src="images/daylight.png" alt="Picture of the sun" width="100">
+                <p><span id="degrees">30</span>&#176;F</p> 
+            </div>
+            <p>Wind Speed: <span id="windspeed">7</span> mph</p>
+            <p>Wind Chill: <span id="windchill">N/A</span></p>
         </div>
         <div class="news">
-            <img src="https://via.placeholder.com/200x200.png?text=news placeholder" alt="News Picture">
-        </div>
+            <h2>News Release</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis eget nunc lobortis mattis aliquam. Auctor neque vitae tempus quam pellentesque nec nam aliquam sem. Varius vel pharetra vel turpis nunc. Gravida neque convallis a cras semper auctor neque. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Consequat ac felis donec et odio pellentesque diam volutpat commodo. Nisl vel pretium lectus quam id leo in vitae. Duis at consectetur lorem donec massa sapien faucibus et molestie. Elit eget gravida cum sociis.</p>
+        </div> 
         <div class="spotlightcontainer">
             <div id="spotlight1">
-                <img src="https://via.placeholder.com/200x200.png?text=Spotlight 1" alt="Spotlight 1">
+                <h2>Thankful Transport</h2>
+                <img src="images/movingtruck.png" alt="Moving Truck" width= 100>
+                <p>"We Get it there for you!"</p>
+                <div class="spotcontact">
+                    <p>hello@thankfultransport.com</p>
+                    <p>+999-999-9999 | website</p>
+                </div>
             </div>
             <div id="spotlight2">
-                <img src="https://via.placeholder.com/200x200.png?text=Spotlight 2" alt="Spotlight 2">
+                <h2>Code Primera</h2>
+                <img src="images/letscode.png" alt="Lets Code sign" width="100">
+                <p> An after school coding instructional program!</p>
+                <div class="spotcontact">
+                    <p>hello@Primera.com</p>
+                    <p>+999-999-9999 | website</p>
+                </div>
             </div>
             <div id="spotlight3">
-                <img src="https://via.placeholder.com/200x200.png?text=Spotlight 3" alt="Spotlight 3">
+                <h2>Build a Treefort</h2>
+                <img src="images/treehouse.png" alt="Treehouse" width="100">
+                <p>Over 1000 Plans!</p>
+                <div class="spotcontact">
+                    <p>hello@treefort.com</p>
+                    <p>+999-999-9999 | website</p>
+                </div>
             </div>
         </div>
         <div class="join">
-            <img src="https://via.placeholder.com/200x200.png?text=Join placeholder" alt="Event picture">
+            <h2>Join Us!</h2>
+            <p>Discover how to join the chamber of commerce and how it will benefet your organization!</p>
         </div>
     </main>
     <footer>
+        <section id="chamberfooter">
             <div class="logobox">
-                <a href="index.html"><img src="images/DiamondCity.png" alt="Diamond City Logo"></a>
-            </div>
+                <a href="index.html"><img src="images/diamondcity.Webp" alt="Diamond City Logo"></a>
+            
                 <div id="chamberaddress">
                     <h1>Diamond City</h1>
                     <p> Diamond City Chamber</p>
                     <p>987 South Ensign Drive</p>
                     <p>Saratoga Springs, UT 84045</p>
                 </div>
+            </div>
             
             <div id="footerInfo">
                 <p> infor@diamondchamber.com</p>
                 <p>+(801)444-5545</p>
                 <p>Location</p>
             </div>
+        </section>
         <section id="myInfo">
             <span id="currentYear"></span>Diamond City Chamber | Jeremy Diamond | WDD230 Project | 
             <br>
             <span id="lastUpdated"></span>
         </section>
       </footer>
-      <script src=js/getdates.js></script>
-      <script src="js/hamburgerScripts.js"></script>
 </body>
 </html>
 

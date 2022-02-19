@@ -1,4 +1,4 @@
-@media only screen and (min-width: 64rem){
+@media only screen and (min-width: 1100px){
     nav ul li a{
         padding: .5rem 1rem;
     } 
@@ -68,5 +68,10 @@
         display: block;
     }
 
+	.discovercardimage {
+		height: 225px;
+	}
+
 
  }
+

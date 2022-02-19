@@ -1,4 +1,5 @@
-@media only screen and (min-width: 32.5em) {
+
+@media only screen and (min-width: 540px) {
 
 	#chambertext{
 		display: block;
@@ -43,4 +44,48 @@
     justify-content: space-around;
 }
 
+
+.card__face--back{
+    display: block;
 }
+
+	.discovercardimage {
+	position: relative;
+	width: 100%;
+	height: 400px;
+	cursor: pointer;
+	transition: 1s ease-in-out;
+	transform-style: preserve-3d;
+  }
+  .discovercardimage:hover {
+	transform: rotateY(0.5turn);
+  }
+  .discovercardimage .card__face {
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+	transition: 1s ease-in-out;
+  }
+  .discovercardimage .card__face img {
+	-o-object-fit: cover;
+	   object-fit: cover;
+  }
+  .discovercardimage .card__face--back {
+	transform: rotateY(0.5turn);}
+
+  }
+
+
+@media only screen and (min-width: 720px) {
+	.discovercardimage {
+		height: 290px;
+	}
+}
+
+
+
+
+
+  

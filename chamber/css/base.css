@@ -49,10 +49,11 @@ header{
 }
 /*---------- Main ---------------  */
 
-main{
+
+.homemain{
+    grid-template-columns: 1fr;
     margin-top: .5rem;
     display: grid;
-    grid-template-columns: 1fr;
     grid-gap: .5rem;
     justify-content: center;
     align-content: center;
@@ -218,5 +219,33 @@ h1,h2,h3,h4{
 	display: block;
 }
 
+/*---------- Discovery Page ---------------  */
+
+
+
+
+.discovercontainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,
+    minmax(350px, 1fr));
+    justify-content: center;
+    padding: 0;
+    margin-top: .5rem;
+}
+
+.discovercard p, .discovercard p{
+    margin-top: 5px;
+}
+
+.discovercard img{
+    max-width: 95%;
+    height: 95%;
+    border: #EFE9E6 double 8px;
+    font-size: 1.5em;
+}
+
+.card__face--back{
+    display: none;
+}
 
 

@@ -17,7 +17,7 @@ let numberofdays = Math.round( daysbetween / DAYS_FACTOR);
 if(lastvisit === null) {
     document.querySelector(".dayssincelastvisit").textContent = "Welcome to the Diamond City Discover Page!"
 } else if (numberofdays >= 1) {
-        document.querySelector(".dayssincelastvisit").textContent = `Welcom back! It has been ${numberofdays} days since we have seen you.`
+        document.querySelector(".dayssincelastvisit").textContent = `Welcome back! It has been ${numberofdays} days since we have seen you.`
     }else if(numberofhours >= 1){
         document.querySelector(".dayssincelastvisit").textContent = `I knew you would only make it ${numberofhours} hours before needing to come back!`
     }else if (numberofminutes >= 1){

@@ -1,6 +1,4 @@
 
-
-
 const lastvisit = localStorage.getItem('lastvisit');
 
 const SECONDS_FACTOR = 1000;
@@ -15,13 +13,6 @@ let numberofminutes =  Math.round(daysbetween / MINUTES_FACTOR);
 let numberofhours = Math.round(daysbetween / HOURS_FACTOR);
 let numberofdays = Math.round( daysbetween / DAYS_FACTOR);
 
-
-
-console.log(`days ${numberofdays}`)
-console.log(`hours ${numberofhours}`)
-console.log(`minutes ${numberofminutes}`)
-console.log(`seconds ${numberofseconds}`)
-console.log(`daysbetween ${daysbetween >= 1}`)
 
 if(lastvisit === null) {
     document.querySelector(".dayssincelastvisit").textContent = "Welcome to the Diamond City Discover Page!"

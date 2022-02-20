@@ -248,4 +248,13 @@ h1,h2,h3,h4{
     display: none;
 }
 
+.dayssincelastvisit{
+    background-color: #054A91;
+    color: #EFE9E6;
+    font-size: 1.3rem;
+    padding: 15px;
+    margin: 0px;
+    text-align: center;
+    border-top: #EFE9E6 .5em solid;
+}
 

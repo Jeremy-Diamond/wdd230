@@ -8,20 +8,21 @@
 	--zebra: hsl(0, 0%, 93%, 1);
 }
 
-
-
-
 html{
     font-family: 'Ubuntu', sans-serif;
+    width: auto;
 }
 
-
 table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
     border-collapse: collapse;
     border: 2px solid var(--border);
     box-shadow: 0 0 30px var(--shadow);
     letter-spacing: 1px;
     font-size: 1rem;
+    text-indent: initial;
   }
 
 tr:first-child th {

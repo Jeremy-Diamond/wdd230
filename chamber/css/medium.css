@@ -1,5 +1,5 @@
 
-@media only screen and (min-width: 540px) {
+@media only screen and (min-width: 720px) {
 
 	#chambertext{
 		display: block;
@@ -52,7 +52,7 @@
 	.discovercardimage {
 	position: relative;
 	width: 100%;
-	height: 400px;
+	height: 275px;
 	cursor: pointer;
 	transition: 1s ease-in-out;
 	transform-style: preserve-3d;
@@ -75,14 +75,13 @@
   .discovercardimage .card__face--back {
 	transform: rotateY(0.5turn);}
 
+	.joinmain{
+		grid-template-columns: 1fr 1fr;
+	}
+	
   }
 
 
-@media only screen and (min-width: 720px) {
-	.discovercardimage {
-		height: 290px;
-	}
-}
 
 
 

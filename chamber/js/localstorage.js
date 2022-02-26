@@ -13,7 +13,6 @@ let numberofminutes =  Math.round(daysbetween / MINUTES_FACTOR);
 let numberofhours = Math.round(daysbetween / HOURS_FACTOR);
 let numberofdays = Math.round( daysbetween / DAYS_FACTOR);
 
-
 if(lastvisit === null) {
     document.querySelector(".dayssincelastvisit").textContent = "Welcome to the Diamond City Discover Page!"
 } else if (numberofdays >= 1) {

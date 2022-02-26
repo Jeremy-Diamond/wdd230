@@ -27,6 +27,9 @@ header{
     text-align: center;
     padding: 10px;
     background-color: #ffcc29;
+    font-size: 1.5em;
+    color: #ed3237;
+    font-style: oblique;
     display: none;
 }
 
@@ -258,3 +261,122 @@ h1,h2,h3,h4{
     border-top: #EFE9E6 .5em solid;
 }
 
+/*----------Join Form-------------*/
+
+.joinmain{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/*-----------FORM ----------------*/
+form {
+    max-width: 450px;
+    margin: 0 auto;
+}
+form fieldset{
+    margin: 2rem 0;
+    border: 5px solid #054A91;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend, div legend{
+    color:#054A91;
+    font: 2rem;
+    margin: 0 1rem;
+    padding: 5px .5rem;
+    border: #054A91 5px solid;
+    border-radius: 10px;
+}
+
+form label.top input, form label.top select{
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 15rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+form label.sbs{
+    display: block;
+    padding: .75rem;
+    color: #555;
+    border: #054A91 solid 5px; 
+    border-radius: 10px;
+    margin: .5em; 
+}
+
+form label.sbs span{
+    font-size: 2em;
+    margin-left: 20px;
+}
+
+form input.submitbtn{
+    border: none;
+    background-color: #ed3237;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.top input:required{
+    border-left: #ed3237 solid 6px;
+}
+
+form label.top input:required:valid{
+    border-left:green solid 6px;
+}
+
+/* HIDE RADIO */
+
+.btnhide [type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  /* IMAGE STYLES */
+[type=radio] + img {
+    cursor: pointer;
+  }
+
+  /* CHECKED STYLES */
+[type=radio]:checked + img {
+    outline: 8px double #9c2c13;
+    padding: 1px;
+  }
+
+.packagedetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2rem;
+    padding: 5px .5rem;
+    border-radius: 10px;
+}
+
+.singlepackage{
+    border: #f0f3f5 double 3px;
+    margin: .5em;
+}
+
+.singlepackage h2{
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    font-size: 3em;
+    margin: .5em;
+}
+
+textarea {
+    /* will prevent resizing horizontally */
+    resize:vertical;
+  }

@@ -7,6 +7,7 @@
         "state": "UT",
         "zip": 84414,
         "phone": 8011234567,
+        "membershipLevel": "Gold",
         "rating": 4.5,
         "imageurl": "..images/200x400.webp"
       }

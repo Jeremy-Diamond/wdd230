@@ -67,8 +67,22 @@ fetch(requestURL)
         otherinfo.textContent = `Has been Serving for ${timeserved} years and has ${childcount} children`
     }
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
+    let prophetNumber = prophet.order
     portrait.setAttribute('src', prophet.imageurl);
-    portrait.setAttribute('alt', `Portait of ${prophet.name} ${prophet.lastname}`);
+    if(prophetNumber === 1){
+      prophetNumber = `${prophetNumber}st Latter-day President`
+    } else{
+        if(prophetNumber === 2){
+          prophetNumber = `${prophetNumber}nd Latter-day President`
+      } else{
+        if( prophetNumber === 3){
+          prophetNumber = `${prophetNumber}rd Latter-day President`
+        } else{
+          prophetNumber = `${prophetNumber}th Latter-day President`
+        }
+      }
+    }
+      portrait.setAttribute('alt', `Portait of ${prophet.name} ${prophet.lastname}- ${prophetNumber}`);
     portrait.setAttribute('loading', 'lazy');
     //portrait.setAttribute('width', '100%');
     //portrait.setAttribute('height', '380');
@@ -85,3 +99,25 @@ fetch(requestURL)
     //console.log(card)
     cards.appendChild(card);
   }
+
+  /* 
+  
+  another way to do do 1st 2nd 3rd
+
+  Here is a better way to do the ordinals that can handle any number of values: 
+
+function ordinal(number) {
+    let x = number % 10;
+    let y = number % 100;
+
+    if (x === 1 && y !== 11) {
+        return `${number}st`;
+    } else if (x === 2 && y !== 12) {
+        return `${number}nd`;
+    } else if (x === 3 && y !== 13) {
+        return `${number}rd`;
+    }
+    return `${number}th`;
+  }
+  
+  */

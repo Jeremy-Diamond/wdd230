@@ -1,0 +1,14 @@
+{
+    "companies": [
+      {
+        "companyName": "Diamond Homes",
+        "street": "123 fun street",
+        "city": "Diamond City",
+        "state": "UT",
+        "zip": 84414,
+        "phone": 8011234567,
+        "rating": 4.5,
+        "imageurl": "..images/200x400.webp"
+      }
+    ]
+  }

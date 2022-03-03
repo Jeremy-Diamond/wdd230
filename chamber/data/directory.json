@@ -9,7 +9,139 @@
         "phone": 8011234567,
         "membershipLevel": "Gold",
         "rating": 4.5,
-        "imageurl": "..images/200x400.webp"
+        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/700x400.webp"
+      },
+      {
+        "companyName": "Diamond RV Sales",
+        "street": "123 fun street",
+        "city": "Diamond City",
+        "state": "UT",
+        "zip": 84414,
+        "phone": 8011234567,
+        "membershipLevel": "Silver",
+        "rating": 2.5,
+        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/700x400.webp"
+      },
+      {
+        "companyName": "Gem Stones Gym",
+        "street": "123 fun street",
+        "city": "Diamond City",
+        "state": "UT",
+        "zip": 84414,
+        "phone": 8011234567,
+        "membershipLevel": "Bronze",
+        "rating": 3,
+        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/700x400.webp"
+      },
+      {
+        "companyName": "Lady Bugs Dance Company",
+        "street": "123 fun street",
+        "city": "Diamond City",
+        "state": "UT",
+        "zip": 84414,
+        "phone": 8011234567,
+        "membershipLevel": "Gold",
+        "rating": 4.5,
+        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/700x400.webp"
+      },
+      {
+        "companyName": "Ffej's Karate",
+        "street": "123 fun street",
+        "city": "Diamond City",
+        "state": "UT",
+        "zip": 84414,
+        "phone": 8011234567,
+        "membershipLevel": "Gold",
+        "rating": 5,
+        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/700x400.webp"
+      },
+      {
+        "companyName": "Diamond Girls Bakery",
+        "street": "123 fun street",
+        "city": "Diamond City",
+        "state": "UT",
+        "zip": 84414,
+        "phone": 8011234567,
+        "membershipLevel": "Gold",
+        "rating": 5,
+        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/700x400.webp"
+      },
+      {
+        "companyName": "Sally's Garage",
+        "street": "123 fun street",
+        "city": "Diamond City",
+        "state": "UT",
+        "zip": 84414,
+        "phone": 8011234567,
+        "membershipLevel": "Silver",
+        "rating": 3.2,
+        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/700x400.webp"
+      },
+      {
+        "companyName": "Pete Boys Burgers",
+        "street": "123 fun street",
+        "city": "Diamond City",
+        "state": "UT",
+        "zip": 84414,
+        "phone": 8011234567,
+        "membershipLevel": "Bronze",
+        "rating": 5,
+        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/700x400.webp"
+      },
+      {
+        "companyName": "Davy Jones Boat Repair",
+        "street": "123 fun street",
+        "city": "Diamond City",
+        "state": "UT",
+        "zip": 84414,
+        "phone": 8011234567,
+        "membershipLevel": "Gold",
+        "rating": 3.9,
+        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/700x400.webp"
+      },
+      {
+        "companyName": "Diamond City Airport",
+        "street": "123 fun street",
+        "city": "Diamond City",
+        "state": "UT",
+        "zip": 84414,
+        "phone": 8011234567,
+        "membershipLevel": "Bronze",
+        "rating": 2,
+        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/700x400.webp"
+      },
+      {
+        "companyName": "Diamond City Post Office",
+        "street": "123 fun street",
+        "city": "Diamond City",
+        "state": "UT",
+        "zip": 84414,
+        "phone": 8011234567,
+        "membershipLevel": "Non-profit",
+        "rating": 1.2,
+        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/700x400.webp"
+      },
+      {
+        "companyName": "Ranger Rusty's IT Services",
+        "street": "123 fun street",
+        "city": "Diamond City",
+        "state": "UT",
+        "zip": 84414,
+        "phone": 8011234567,
+        "membershipLevel": "Bronze",
+        "rating": 3.9,
+        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/700x400.webp"
+      },
+      {
+        "companyName": "Lil Kevin's Towing",
+        "street": "123 fun street",
+        "city": "Diamond City",
+        "state": "UT",
+        "zip": 84414,
+        "phone": 8011234567,
+        "membershipLevel": "Bronze",
+        "rating": 1.3,
+        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/700x400.webp"
       }
     ]
   }

@@ -16,11 +16,18 @@ fetch(requestURL)
   function displayProphets(prophet) {
     // Create elements to add to the document
     let card = document.createElement('section');
+    card.classList.add("directorymain")
     let h2 = document.createElement('h2');
+    h2.classList.add("directorycell")
     let portrait = document.createElement('img');
+    portrait.classList.add("directoryimage")
     let birthdetails = document.createElement('p');
+    birthdetails.classList.add("directorycell")
     let deathdetails = document.createElement('p');
+    deathdetails.classList.add("directorycell")
     let otherinfo = document.createElement('p')
+    otherinfo.classList.add("directorycell")
+
   
     // Change the textContent property of the h2 element to contain the prophet's full name
     h2.textContent = `${prophet.name} ${prophet.lastname}`;
@@ -121,3 +128,25 @@ function ordinal(number) {
   }
   
   */
+
+const mybutton = document.querySelector(".mybutton") 
+mybutton.addEventListener("click",()=>{
+
+  let images = document.querySelectorAll(".directoryimage");
+  images.forEach(item => {item.classList.toggle("hide");
+});
+let table = document.querySelectorAll(".directorymain");
+table.forEach(item => {item.classList.toggle('table')
+});
+let cells = document.querySelectorAll(".directorycell");
+cells.forEach(item => {item.classList.toggle("cell")
+});
+let card = document.querySelector(".cards");
+card.classList.toggle("removegrid");
+  
+
+  
+
+ 
+}
+)

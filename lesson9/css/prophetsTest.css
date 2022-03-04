@@ -22,67 +22,30 @@ html, body {
     font-family: 'Open Sans';
     font-size: 18px;
 }
-  
-main .cards{
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(400px, 1fr));
-    grid-column-gap: 10px;
-    grid-row-gap: 20px ;
-}
 
-main .removegrid{
-    display: block;
-}
-
-.cards section{
-    display: grid;
-    justify-content: center;     
-}
-
-h2{
-    text-align: center;
-    font-size: 2.1em;
-}
-
-p{
-    text-align: left;
-    align-self: center;
-    font-size: 1.2em;
-}
-
-.table{
+main .cards section{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     border-top: rgb(250, 247, 247) solid 2px;
-}
 
-.cell{
+}
+section p{
     border-left: rgb(250, 247, 247) solid 2px;
-    font-weight: normal;
-    margin: 0;
-    font-size: 1.2em;
-    text-align: center;
-    justify-content: center;
-    height: 100%;
+    padding: 5px;
 }
 
-.removegrid section:nth-child(even) {
+
+section:nth-of-type(even) {
     background-color: #df0b0b;
-}
+    max-width: 100%;
+  }
 
-section:last-of-type {
+  section:last-of-type {
     border-bottom: rgb(250, 247, 247) solid 2px;
-}
-
-.hide{
-    display: none;
-}
-
-
+  }
 
 main .cards img{
-    border: double 10px #b78846;
-    margin-top: 10px;
+    display: none;
 }
 
 footer{
@@ -93,9 +56,3 @@ footer{
     margin: 20px;
     padding: 20px;
 }
-
-
-
-
-
-

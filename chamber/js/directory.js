@@ -45,17 +45,17 @@ fetch(requestURL)
     companylogo.setAttribute('src', company.imageurl);
     companylogo.setAttribute('alt', `Logo for ${company.companyName}`);
     companylogo.setAttribute('loading', 'lazy');
-    companylogo.setAttribute('width', '500');
-    companylogo.setAttribute('height', '500');
+    companylogo.setAttribute('width', '150');
+    companylogo.setAttribute('height', '150');
 
   
     
     // Add/append the section(card) with the h2 element
+    card.appendChild(companylogo);
     card.appendChild(h2);
     card.appendChild(address);
     card.appendChild(phone);
     card.appendChild(website);
-    card.appendChild(companylogo);
     
   
     // Add/append the existing HTML div with the cards class with the section(card)
@@ -80,6 +80,13 @@ fetch(requestURL)
     cells.forEach((item) => {
       item.classList.toggle("cell");
     });
-    let card = document.querySelector(".directorymain");
+    let card = document.querySelector(".directorycards");
     card.classList.toggle("removegrid");
+    // Switch Button Text 
+    let buttontext = document.querySelector(".switchFormat").textContent;
+    if(buttontext === "Switch to List"){
+      document.querySelector(".switchFormat").textContent = "Switch to Grid"
+    } else {
+      document.querySelector(".switchFormat").textContent = "Switch to List"
+    }
   });

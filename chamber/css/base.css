@@ -381,5 +381,60 @@ textarea {
     resize:vertical;
   }
 
+  /* --------Discover Page ---------*/
 
-  
+.directorymain{
+    background-color: #054A91;
+    text-align: center;
+}
+  .switchFormat{
+    background-color: #ed3237;
+    color: #EFE9E6;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border: #EFE9E6 5px solid;
+    border-radius: 10px;
+    margin: 0.75rem;
+}
+
+.directorycards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+    grid-column-gap: 10px;
+    grid-row-gap: 20px ;
+}
+
+.removegrid{
+    display: block;
+}
+
+.table{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border-top: rgb(250, 247, 247) solid 2px;
+}
+
+.cell{
+    border-left: rgb(250, 247, 247) solid 2px;
+    font-weight: normal;
+    margin: 0;
+    font-size: 1.2em;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.removegrid section:nth-child(even) {
+    background-color: #df0b0b;
+}
+
+section:last-of-type {
+    border-bottom: rgb(250, 247, 247) solid 2px;
+}
+
+.hide{
+    display: none;
+}
+
+.directorycard{}

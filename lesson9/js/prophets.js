@@ -129,24 +129,20 @@ function ordinal(number) {
   
   */
 
-const mybutton = document.querySelector(".mybutton") 
-mybutton.addEventListener("click",()=>{
-
+const mybutton = document.querySelector(".mybutton");
+mybutton.addEventListener("click", () => {
   let images = document.querySelectorAll(".directoryimage");
-  images.forEach(item => {item.classList.toggle("hide");
+  images.forEach((item) => {
+    item.classList.toggle("hide");
+  });
+  let table = document.querySelectorAll(".directorymain");
+  table.forEach((item) => {
+    item.classList.toggle("table");
+  });
+  let cells = document.querySelectorAll(".directorycell");
+  cells.forEach((item) => {
+    item.classList.toggle("cell");
+  });
+  let card = document.querySelector(".cards");
+  card.classList.toggle("removegrid");
 });
-let table = document.querySelectorAll(".directorymain");
-table.forEach(item => {item.classList.toggle('table')
-});
-let cells = document.querySelectorAll(".directorycell");
-cells.forEach(item => {item.classList.toggle("cell")
-});
-let card = document.querySelector(".cards");
-card.classList.toggle("removegrid");
-  
-
-  
-
- 
-}
-)

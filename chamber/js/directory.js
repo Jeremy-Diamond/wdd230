@@ -17,32 +17,44 @@ fetch(requestURL)
   function displayCompanies(company) {
     // Create elements to add to the document
     let card = document.createElement('section');
+    card.classList.add("directorycard")
     let h2 = document.createElement('h2');
+    h2.classList.add("directorycell")
     let address = document.createElement('p');
+    address.classList.add("directorycell")
     let phone = document.createElement('p');
+    phone.classList.add("directorycell")
+    let website = document.createElement('p')
+    website.classList.add("directorycell")
     let companylogo = document.createElement('img');
+    companylogo.classList.add("directoryimage")
   
     // Change the textContent property of the h2 element to contain the Company name
     h2.textContent = company.companyName;
 
     // Create Address string
-    address.textContent = `${company.street} ${company.city} ${company.state} ${company.zip}`
+    address.innerHTML = `${company.street} ${company.city} ${company.state} ${company.zip}`
 
     // Add Phone 
     phone.textContent = company.phone;
+
+    // add website 
+    website.textContent = company.websiteURL;
+
     // Create Logo images
     companylogo.setAttribute('src', company.imageurl);
     companylogo.setAttribute('alt', `Logo for ${company.companyName}`);
     companylogo.setAttribute('loading', 'lazy');
-    companylogo.setAttribute('width', '700');
-    companylogo.setAttribute('height', '400');
+    companylogo.setAttribute('width', '500');
+    companylogo.setAttribute('height', '500');
 
   
     
     // Add/append the section(card) with the h2 element
     card.appendChild(h2);
     card.appendChild(address);
-    card.appendChild(phone)
+    card.appendChild(phone);
+    card.appendChild(website);
     card.appendChild(companylogo);
     
   
@@ -51,3 +63,23 @@ fetch(requestURL)
     cards.appendChild(card);
   }
 
+
+  // Listner to swap grid and list
+
+  const switchFormat = document.querySelector(".switchFormat");
+  switchFormat.addEventListener("click", () => {
+    let images = document.querySelectorAll(".directoryimage");
+    images.forEach((item) => {
+      item.classList.toggle("hide");
+    });
+    let table = document.querySelectorAll(".directorycard");
+    table.forEach((item) => {
+      item.classList.toggle("table");
+    });
+    let cells = document.querySelectorAll(".directorycell");
+    cells.forEach((item) => {
+      item.classList.toggle("cell");
+    });
+    let card = document.querySelector(".directorymain");
+    card.classList.toggle("removegrid");
+  });

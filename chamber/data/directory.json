@@ -7,10 +7,10 @@
         "state": "UT",
         "zip": 84414,
         "phone": "(801)123-4567",
-        "websiteURL": "HTTPS/website.com",
+        "websiteURL": "https://diamondhomesrealestate.com",
         "membershipLevel": "Gold",
         "rating": 4.5,
-        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/700x400.webp"
+        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/diamondhomes.webp"
       },
       {
         "companyName": "Diamond RV Sales",
@@ -19,46 +19,46 @@
         "state": "UT",
         "zip": 84414,
         "phone": "(801)123-4567",
-        "websiteURL": "HTTPS/website.com",
+        "websiteURL": "https://diamondrv.com",
         "membershipLevel": "Silver",
         "rating": 2.5,
-        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/700x400.webp"
+        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/diamondrv.webp"
       },
       {
-        "companyName": "Gem Stones Gym",
+        "companyName": "Code Primera",
         "street": "123 fun street",
         "city": "Diamond City",
         "state": "UT",
         "zip": 84414,
         "phone": "(801)123-4567",
-        "websiteURL": "HTTPS/website.com",
+        "websiteURL": "https://letscode.com",
         "membershipLevel": "Bronze",
         "rating": 3,
-        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/700x400.webp"
+        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/codelogo.webp"
       },
       {
-        "companyName": "Lady Bugs Dance Company",
+        "companyName": "Build a Treefort",
         "street": "123 fun street",
         "city": "Diamond City",
         "state": "UT",
         "zip": 84414,
         "phone": "(801)123-4567",
-        "websiteURL": "HTTPS/website.com",
+        "websiteURL": "https://treeforts.com",
         "membershipLevel": "Gold",
         "rating": 4.5,
-        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/700x400.webp"
+        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/treefortlogo.webp"
       },
       {
-        "companyName": "Ffej's Karate",
+        "companyName": "Thankful Transport",
         "street": "123 fun street",
         "city": "Diamond City",
         "state": "UT",
         "zip": 84414,
         "phone": "(801)123-4567",
-        "websiteURL": "HTTPS/website.com",
+        "websiteURL": "https://we movestuff.com",
         "membershipLevel": "Gold",
         "rating": 5,
-        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/700x400.webp"
+        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/thankfultransport.webp"
       },
       {
         "companyName": "Diamond Girls Bakery",
@@ -67,22 +67,22 @@
         "state": "UT",
         "zip": 84414,
         "phone": "(801)123-4567",
-        "websiteURL": "HTTPS/website.com",
+        "websiteURL": "https://bestfoodintown.com",
         "membershipLevel": "Gold",
         "rating": 5,
-        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/700x400.webp"
+        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/bakery.webp"
       },
       {
-        "companyName": "Sally's Garage",
+        "companyName": "Sally's Dental",
         "street": "123 fun street",
         "city": "Diamond City",
         "state": "UT",
         "zip": 84414,
         "phone": "(801)123-4567",
-        "websiteURL": "HTTPS/website.com",
+        "websiteURL": "https://sallysdental.com",
         "membershipLevel": "Silver",
         "rating": 3.2,
-        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/700x400.webp"
+        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/sallysdental.webp"
       },
       {
         "companyName": "Pete Boys Burgers",
@@ -91,10 +91,10 @@
         "state": "UT",
         "zip": 84414,
         "phone": "(801)123-4567",
-        "websiteURL": "HTTPS/website.com",
+        "websiteURL": "https://peteboys.com",
         "membershipLevel": "Bronze",
         "rating": 5,
-        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/700x400.webp"
+        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/peteboyburger.webp"
       },
       {
         "companyName": "Davy Jones Boat Repair",
@@ -103,10 +103,10 @@
         "state": "UT",
         "zip": 84414,
         "phone": "(801)123-4567",
-        "websiteURL": "HTTPS/website.com",
+        "websiteURL": "https://davyjonesboats.com",
         "membershipLevel": "Gold",
         "rating": 3.9,
-        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/700x400.webp"
+        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/davyjones.webp"
       },
       {
         "companyName": "Diamond City Airport",
@@ -115,10 +115,10 @@
         "state": "UT",
         "zip": 84414,
         "phone": "(801)123-4567",
-        "websiteURL": "HTTPS/website.com",
+        "websiteURL": "https://flydiamondcity.com",
         "membershipLevel": "Bronze",
         "rating": 2,
-        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/700x400.webp"
+        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/airport.webp"
       },
       {
         "companyName": "Diamond City Post Office",
@@ -127,22 +127,22 @@
         "state": "UT",
         "zip": 84414,
         "phone": "(801)123-4567",
-        "websiteURL": "HTTPS/website.com",
+        "websiteURL": "https://shipdiamondcity.com",
         "membershipLevel": "Non-profit",
         "rating": 1.2,
-        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/700x400.webp"
+        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/postoffice.webp"
       },
       {
-        "companyName": "Ranger Rusty's IT Services",
+        "companyName": "Ranger Rusty's",
         "street": "123 fun street",
         "city": "Diamond City",
         "state": "UT",
         "zip": 84414,
         "phone": "(801)123-4567",
-        "websiteURL": "HTTPS/website.com",
+        "websiteURL": "https://rangerrusty.com",
         "membershipLevel": "Bronze",
         "rating": 3.9,
-        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/700x400.webp"
+        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/rangerrusty.webp"
       },
       {
         "companyName": "Lil Kevin's Towing",
@@ -151,10 +151,10 @@
         "state": "UT",
         "zip": 84414,
         "phone": "(801)123-4567",
-        "websiteURL": "HTTPS/website.com",
+        "websiteURL": "https://lilkevinstowing.com",
         "membershipLevel": "Bronze",
         "rating": 1.3,
-        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/700x400.webp"
+        "imageurl": "https://jeremy-diamond.github.io/wdd230/chamber/images/lilkevins.webp"
       }
     ]
   }

@@ -148,6 +148,17 @@ footer{
     margin-top: .5em; 
 }
 
+.credits a{
+    font-style: none;
+    color: #EFE9E6;
+}
+
+.credits{
+    text-align: center;
+    border-top: #EFE9E6 solid 2px;
+    padding: 5px;
+}
+
 #chamberfooter{
     display: flex;
     flex-direction: column;
@@ -426,7 +437,7 @@ textarea {
 }
 
 .removegrid section:nth-child(even) {
-    background-color: #df0b0b;
+    background-color: #4175d6;
 }
 
 section:last-of-type {
@@ -436,5 +447,3 @@ section:last-of-type {
 .hide{
     display: none;
 }
-
-.directorycard{}

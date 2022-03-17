@@ -1,3 +1,3 @@
 document.querySelector("#hiddendate").textContent = Date.now()  
 
-console.log("test")
+// console.log("test")

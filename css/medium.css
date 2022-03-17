@@ -18,4 +18,11 @@
         float:left;
         border-radius: 10px;
     }
+
+    .contactboard{
+        background-color: pink;
+    }
+    .contact{
+        background-color: aquamarine;
+    }
 }

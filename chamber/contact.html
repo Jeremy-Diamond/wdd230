@@ -16,8 +16,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display+SC&display=swap" rel="stylesheet">
     <script defer src=js/getdates.js></script>
     <script defer src="js/hamburgerScripts.js"></script>
-    <script defer src="js/banner.js"></script>
-    <script defer src="js/directory.js"></script>
     <title>Diamond City Chamber of Commerce</title>
 </head>
 <body>
@@ -48,9 +46,37 @@
         </div>
         <span id="date"></span>        
     </header>
-    <main class="directorymain">
-        <button class="switchFormat" >Switch to List</button>
-        <div class="directorycards"></div>
+    <main class="contactmain">
+        
+        <div class="contactboard">
+            <div class="contact">
+                <img src="images/davyjonescontact.webp" alt="picture of gold medal" width="300">
+                <h2>Davy Jones</h2>
+                <h3>President</h3>  
+            </div>
+            <div class="contact">
+                <img src="images/clarkkent.webp" alt="picture of gold medal" width="300">
+                <h2>Clark Kent</h2>
+                <h3>Vice President</h3>  
+            </div>
+            <div class="contact">
+                <img src="images/brucewayne.webp" alt="picture of gold medal" width="300">
+                <h2>Bruce Wayne</h2>
+                <h3>Treasurer</h3>  
+            </div>
+            
+        </div>
+        <form class="contactform" method="get" action="thanks.html">
+            <fieldset>
+                <legend>Contact Form</legend>
+                <label class="top">Name* <input type="text" name="fname" required></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">Question/ Concern <textarea name="businessdescription" cols="30" rows="10" required> </textarea> </label>
+            </fieldset>
+
+            <input type="submit" value="Ask Question" class="submitbtn">
+
+        </form> 
     </main>
     <footer>
         <section id="chamberfooter">

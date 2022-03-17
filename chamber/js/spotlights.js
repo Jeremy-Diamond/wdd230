@@ -19,7 +19,6 @@ fetch(requestURL)
     countofgold = countofgold.sort(() => Math.random() - 0.5);
     countofgold = countofgold.slice(0,3);
     //console.log(countofgold);
-
     countofgold.forEach(companycount => {
         addspotlight(companies[companycount])       
     });
@@ -56,7 +55,7 @@ function addspotlight(company){
 
     // p tag for email
     let email = document.createElement('p');
-    email.innerText = 'PLACE EMAIL HERE';
+    email.innerText = company.email;
     contactdiv.appendChild(email);
 
     //ptag for phone and website

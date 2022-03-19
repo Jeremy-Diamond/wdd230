@@ -150,12 +150,12 @@ footer{
 
 .credits a{
     font-style: none;
-    color: #EFE9E6;
+    color: #F0F3F5;
 }
 
 .credits{
     text-align: center;
-    border-top: #EFE9E6 solid 2px;
+    border-top: #F0F3F5 solid 2px;
     padding: 5px;
 }
 
@@ -164,6 +164,10 @@ footer{
     flex-direction: column;
     align-items: center; 
     text-align: center;
+}
+
+#footerInfo{
+    margin: 15px;
 }
 
 #myInfo{
@@ -182,7 +186,11 @@ h1,h2,h3,h4{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #EFE9E6;  
+    color: #F0F3F5;  
+}
+
+footer .logobox{
+    flex-direction: column;
 }
 
 .logobox img{
@@ -220,12 +228,19 @@ h1,h2,h3,h4{
 
 
 .primaryNav a:hover {
-	color: white;
-	background-color: black;
+    border: #9c2c13 5px solid;
+    border-radius: 10px;
 }
 
 .primaryNav a:active{
-    border:#F0F3F5 solid 2px ;
+    border:#054A91 solid 2px ;
+}
+
+#selected{
+    background-color: #F0F3F5;
+    color: #054A91;
+    border: #9c2c13 5px solid;
+    border-radius: 10px;
 }
 
 
@@ -254,7 +269,7 @@ h1,h2,h3,h4{
 .discovercard img{
     max-width: 95%;
     height: 95%;
-    border: #EFE9E6 double 8px;
+    border: #F0F3F5 double 8px;
     font-size: 1.5em;
 }
 
@@ -264,12 +279,12 @@ h1,h2,h3,h4{
 
 .dayssincelastvisit{
     background-color: #054A91;
-    color: #EFE9E6;
+    color: #F0F3F5;
     font-size: 1.3rem;
     padding: 15px;
     margin: 0px;
     text-align: center;
-    border-top: #EFE9E6 .5em solid;
+    border-top: #F0F3F5 .5em solid;
 }
 
 /*----------Join Form-------------*/
@@ -277,7 +292,9 @@ h1,h2,h3,h4{
 .joinmain{
     display: grid;
     grid-template-columns: 1fr;
+    background-color: #054A91;
 }
+
 
 /*-----------FORM ----------------*/
 form {
@@ -286,39 +303,50 @@ form {
 }
 form fieldset{
     margin: 2rem 0;
-    border: 5px solid #054A91;
+    border: 5px solid #F0F3F5;
     border-radius: 10px;
     padding: .5rem 2%;
+    background-color: #4175d6;
+    padding: -15px;
 }
 
 form legend, div legend{
-    color:#054A91;
-    font: 2rem;
+    color:#F0F3F5;
+    font: 6rem;
+    font-weight: bold;
     margin: 0 1rem;
-    padding: 5px .5rem;
-    border: #054A91 5px solid;
-    border-radius: 10px;
+    padding: 10px .75rem;
+    border: #F0F3F5 5px solid;
+    border-radius: 15px;
+    background-color: #4175d6;
 }
 
-form label.top input, form label.top select{
+form label.top textarea, form label.top input, form label.top select{
     display: block;
     font-size: 1rem;
-    border: solid 1px #999;
+    border: solid 1px #F0F3F5;
     border-radius: 4px;
     padding: .75rem;
-    color: #555;
+    color: #F0F3F5;
     width: 100%;
     max-width: 15rem;
-    background-color: rgba(0,0,0,0.1);
+    background-color: #F0F3F5;
+    margin-right: 100px;
+    margin-bottom: 10px;
+}
+
+.top{
+    color: #F0F3F5;
+    font-size: 1.5em;
 }
 
 form label.sbs{
     display: block;
     padding: .75rem;
-    color: #555;
-    border: #054A91 solid 5px; 
+    color: #F0F3F5;
+    border: #F0F3F5 solid 5px; 
     border-radius: 10px;
-    margin: .5em; 
+    margin: .5em;
 }
 
 form label.sbs span{
@@ -401,20 +429,26 @@ textarea {
 }
   .switchFormat{
     background-color: #ed3237;
-    color: #EFE9E6;
+    color: #F0F3F5;
     font-weight: 600;
     font-size: 1.5rem;
     padding: 1rem;
-    border: #EFE9E6 5px solid;
+    border: #F0F3F5 5px solid;
     border-radius: 10px;
     margin: 0.75rem;
 }
 
 .directorycards{
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill,minmax(350px, 1fr));
     grid-column-gap: 10px;
     grid-row-gap: 20px ;
+}
+
+.directorycard{
+    border: #F0F3F5 5px solid;
+    margin: 10px;
+    padding: 10px;
 }
 
 .removegrid{
@@ -424,6 +458,9 @@ textarea {
 .table{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    border: none;
+    margin: 0;
+    padding: 0;
     border-top: rgb(250, 247, 247) solid 2px;
 }
 
@@ -437,16 +474,46 @@ textarea {
     height: 100%;
 }
 
+.cell:last-of-type{
+    border-right: rgb(250, 247, 247) solid 2px;
+}
+
 .removegrid section:nth-child(even) {
     background-color: #4175d6;
 }
 
-section:last-of-type {
+main section:last-of-type {
     border-bottom: rgb(250, 247, 247) solid 2px;
 }
+
 
 .hide{
     display: none;
 }
+
+.contactmain{
+    background-color: #054A91;
+}
+.contactmap{
+    display: flex;
+    flex-direction: column;
+}
+
+.contactmap iframe{
+    padding: 1em;
+    margin: 30px;
+}
+
+.thanksmain{
+    background-color: #054A91;
+    color: #F0F3F5;
+    font-size: 2em;
+    text-align: center;
+    padding: 50px;
+}
+
+
+
+
 
 

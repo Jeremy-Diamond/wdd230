@@ -41,7 +41,7 @@
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a id="selected" href="contact.html">Contact</a></li>
             </ul>       
         </div>
         <span id="date"></span>        
@@ -66,17 +66,21 @@
             </div>
             
         </div>
-        <form class="contactform" method="get" action="thanks.html">
-            <fieldset>
-                <legend>Contact Form</legend>
-                <label class="top">Name* <input type="text" name="fname" required></label>
-                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-                <label class="top">Question/ Concern <textarea name="businessdescription" cols="30" rows="10" required> </textarea> </label>
-            </fieldset>
+        <div class="contactmap" >
+            <form class="contactform" method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Contact Us</legend>
+                    <label class="top">Name* <input type="text" name="fname" required></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                    <label class="top">Question/ Concern <textarea name="businessdescription" cols="30" rows="10" required> </textarea> </label>
+                </fieldset>
 
-            <input type="submit" value="Ask Question" class="submitbtn">
+                <input type="submit" value="Ask Question" class="submitbtn">
 
-        </form> 
+            </form> 
+        
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3041.1696169488!2d-111.93309018375983!3d40.33858317937428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d7eb53001a9f7%3A0x8484fbc1401f8c17!2sThe%20Church%20of%20Jesus%20Christ%20of%20Latter-day%20Saints!5e0!3m2!1sen!2sus!4v1647666102978!5m2!1sen!2sus" width="500" height="370" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
     </main>
     <footer>
         <section id="chamberfooter">

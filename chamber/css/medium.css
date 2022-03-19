@@ -82,6 +82,14 @@
 		flex-direction: row;
 		justify-content: space-around;
 		}
+
+	footer .logobox{
+		flex-direction: row;
+	}
+
+	.contactmap{
+		flex-direction: row;
+	}
   }
 
 

@@ -9,7 +9,7 @@ fetch(requestURL)
   .then(function (jsonObject) {
     // console.table(jsonObject);  // temporary checking for valid response and data parsing
     const companies = jsonObject['companies'];
-    console.log(companies)
+    //console.log(companies)
     companies.forEach(displayCompanies);
 });  
 

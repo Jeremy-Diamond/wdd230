@@ -149,7 +149,7 @@ footer{
 }
 
 .credits a{
-    font-style: none;
+    font-style: normal;
     color: #F0F3F5;
 }
 
@@ -307,7 +307,6 @@ form fieldset{
     border-radius: 10px;
     padding: .5rem 2%;
     background-color: #4175d6;
-    padding: -15px;
 }
 
 form legend, div legend{

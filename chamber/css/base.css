@@ -86,18 +86,34 @@ main div{
         bottom: 25px;
         right: 50px;
         background-color: #ed3237;
+        color: #F0F3F5;
+        font-size: 1.5em;
         opacity: .75;
         padding: 1.5rem;
         box-shadow: 0 0 30px #333;
         border-radius: 10px;     
 }
 
-.join h2{
+.join{
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 30px;
+    color:#F0F3F5 ;
+}
+
+.join a{
     background-color: #ed3237;
     padding: 1.5rem;
     box-shadow: 0 0 30px #333;
     border-radius: 10px;
-    margin: .75rem;     
+    margin: .75rem;
+    position: absolute;
+    bottom: 35px;
+    right: 85px;
+    color:#F0F3F5;
+    font-size: 1.5em;
+        
 }
 
 

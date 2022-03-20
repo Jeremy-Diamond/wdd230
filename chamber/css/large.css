@@ -34,6 +34,7 @@
 
     main{
 		grid-template-columns: 1fr 1fr 1fr 1fr;
+		font-size: 1.1em;
 	}
 
 	.event{
@@ -72,6 +73,13 @@
 		height: 225px;
 	}
 
+	.join a{
+		bottom: 35px;
+		right: 65px;
+	}
 
+	.join{
+		height: auto;
+	}
  }
 

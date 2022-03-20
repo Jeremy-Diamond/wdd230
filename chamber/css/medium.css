@@ -90,12 +90,24 @@
 	.contactmap{
 		flex-direction: row;
 	}
+	
+	.join a{
+		background-color: #ed3237;
+		padding: 1.5rem;
+		box-shadow: 0 0 30px #333;
+		border-radius: 10px;
+		margin: .75rem;
+		position: absolute;
+		bottom: 0px;
+		right: 20px;
+		justify-self: center;     
+  }
+
+  .join{
+	  height: 60px;
+	  justify-content: center;
+	  font-size: 1.1em;
   }
 
 
-
-
-
-
-
-  
+}

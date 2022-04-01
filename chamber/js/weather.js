@@ -17,7 +17,7 @@ fetch(apiURL)
         document.querySelector("#degrees").innerHTML = displaytemp;
         document.querySelector("#windspeed").innerHTML = displaywspeed;
 
-        const iconsrc= `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
+        const iconsrc= `https://openweathermap.org/img/w/${jsObject.current.weather[0].icon}.png`;
         const desc = jsObject.weather[0].description;
         let properdesc = desc.split(' ').map(propercase).join(' ');
         //console.log(`${properdesc}`);

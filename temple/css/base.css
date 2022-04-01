@@ -1,0 +1,213 @@
+
+body{
+    background-color: #ffffff;
+    color: #0A122A;
+    font-family: 'PT Serif', serif;
+    min-width: 380px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ---------HEADER and NAVIGATION--------*/
+
+header{
+    display: grid;
+    grid-template-columns: 120px 1fr 120px;
+    align-items: center;
+    justify-items: center;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(144, 114, 44, .95);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+  
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+  
+.overlay a{
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+  
+.overlay a:hover, .overlay a:focus {
+    color: #ffffff;
+}
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+.reservebtn{
+    text-align: center;
+    background-color: #5F4C26;
+    color: #ffffff;
+    border: #90722c solid 5px;
+}
+
+header section:nth-of-type(3){
+    grid-column: 1/4;
+    width: 100%;
+}
+
+.reserveform fieldset{
+    display: none;
+}
+
+.showform fieldset{
+    display: grid;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(144, 114, 44, .90);
+    color: #ffffff;
+    row-gap: 20px;  
+}
+
+.reserveform a{
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #FFFFFF;
+    display: block;
+    transition: 0.3s;
+}
+.reservesubmit{
+    background-color: #5F4C26;
+    border: #ffffff solid 5px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 1.5rem;
+    width: 360px;
+    margin: auto;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 1.5rem;
+    justify-self: center;
+}
+
+.top input{
+    background-color: rgb(95, 76, 38,.70);
+    color: #ffffff;
+    padding: 5px;
+    border: #ffffff solid 2px;
+    width: 360px;
+    margin: auto;
+}
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
+
+/*---------MAIN-------------*/
+  #bannerimage{
+    object-fit: cover;
+    width: 100%;
+    margin: 0;
+}
+
+/* ---------Footer ---------*/
+
+footer{
+    background-color: #ffffff;
+    color: #ffffff;
+    margin: 0;
+}
+
+footer h2{
+    font-size: 1.8rem;
+
+}
+
+.sitefooter{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    font-size: 1.35rem;
+    background-color: #5F4C26;
+}
+
+
+.contactus{
+    margin: 25px 25px;
+    text-align: center;
+}
+.footerlogo{
+    display: none;
+}
+
+#socialmedia img{
+    padding: 10px; 
+}
+
+.contactus> a{
+    color: #ffffff;
+    background-color: #90722c;
+    border: #ffffff solid 3px;
+    border-radius: 10px;
+    padding: 15px;
+    text-decoration: none;
+    transition: 0.3s;
+    border-radius: 10px;
+    line-height: 7rem; 
+    margin: auto;
+    font-size: 1.5rem;
+}
+
+.footeraddress{
+    line-height: .65rem;
+    text-align: center;
+    margin: 25px 25px;
+}
+
+.footeraddress a{
+padding: 8px;
+text-decoration: none;
+color: #ffffff;
+transition: 0.3s;
+background-color: #90722c;
+border: #ffffff solid 3px;
+border-radius: 10px;
+line-height: 3rem;
+}
+
+.myinfo{
+    background-color: #90722c;
+    padding: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+
+
+

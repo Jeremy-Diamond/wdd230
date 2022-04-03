@@ -1,16 +1,19 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/onecall?lat=40.77&lon=-111.89&units=imperial&appid=f5754c8dd8285a6e865afb1599d2c869";
-const forcastcontainer = document.querySelector('.forcastcontainer');
-
+const apiURL = 'https://api.openweathermap.org/data/2.5/onecall?lat=40.77&lon=-111.89&exclude=minutely,hourly&units=imperial&appid=f5754c8dd8285a6e865afb1599d2c869';
+const forcastcontainer = document.querySelector('.forcastcontainer');const myalert = document.querySelector('.alert');
 fetch(apiURL)
     .then((response)=> response.json())
     .then((jsObject)=> {
-        //console.log(jsObject)
+        //console.log(jsObject);
+        
+        //DOCUMENTATION SAID THAT IF THERE ARE NO ALERTS  THEY ARE NOT PART OF THE RESPONCE, SO I USED THE SAMPLE
+        addfakealert();
+        const closebutton = document.querySelector('closealert')  
 
         const currenttemp = jsObject.current.temp;
         const displaytemp = currenttemp.toFixed(1);
 
-        document.querySelector("#degrees").innerHTML = displaytemp;
-        document.querySelector("#humidity").innerHTML = jsObject.current.humidity;
+        document.querySelector('#degrees').innerHTML = displaytemp;
+        document.querySelector('#humidity').innerHTML = jsObject.current.humidity;
 
 
         const iconsrc= `https://openweathermap.org/img/w/${jsObject.current.weather[0].icon}.png`;
@@ -30,7 +33,8 @@ fetch(apiURL)
         //console.log(forcastdays[0])
         
         // create count of objects 
-        let daycount = Array.from(Array(forcastdays.length).keys());
+        let daycount = [1,2,3]; // THREE DAY FORCST
+        //let daycount = Array.from(Array(forcastdays.length).keys()); // FULL FORCAST
         //console.log(daycount)
 
         daycount.forEach(day =>{
@@ -40,17 +44,17 @@ fetch(apiURL)
     });
 
 function createforcastcard(day){
-    console.log(day);
+    //console.log(day);
 
     // Create card
-    let weathercard = document.createElement('div');
-    weathercard.classList.add('weathercard');
-    console.log(weathercard);
-    forcastcontainer.appendChild(weathercard);
+    let daycard = document.createElement('div');
+    daycard.classList.add('daycard');
+    //console.log(daycard);
+    forcastcontainer.appendChild(daycard);
     
     //-----set dates------
     let weatherdate = new Date(day.dt * 1000);
-    console.log(weatherdate);
+    //console.log(weatherdate);
     const monthday = `${weatherdate.getMonth()+1}/${weatherdate.getDate()}`;
     //console.log(monthday);
     const weekday = weatherdate.toLocaleString('default',{weekday: 'short'});
@@ -59,7 +63,7 @@ function createforcastcard(day){
     //-----add date info
     let dates = document.createElement('h2');
     dates.classList.add('date');
-    weathercard.appendChild(dates);
+    daycard.appendChild(dates);
     let headerdate = document.createElement('span');
     headerdate.textContent = weekday;
     dates.appendChild(headerdate);
@@ -80,7 +84,7 @@ function createforcastcard(day){
     weatherimage.setAttribute('loading', 'lazy');
     weatherimage.setAttribute('width', '75');
     weatherimage.setAttribute('height', '75');
-    weathercard.appendChild(weatherimage);
+    daycard.appendChild(weatherimage);
     
     //-----set temps
     const hightemp = `${day.temp.max.toFixed(0)}°`;
@@ -91,7 +95,7 @@ function createforcastcard(day){
     //----ADD TEMP TO DOCUMENT
     let tempdiv = document.createElement('div')
     tempdiv.classList.add('temp');
-    weathercard.appendChild(tempdiv);
+    daycard.appendChild(tempdiv);
     let maxtemp = document.createElement('span');
     maxtemp.classList.add('high');
     maxtemp.textContent = hightemp;
@@ -106,19 +110,24 @@ function createforcastcard(day){
     
     let precipdiv = document.createElement('div')
     precipdiv.classList.add('precip');
-    weathercard.appendChild(precipdiv);
+    daycard.appendChild(precipdiv);
 
     let raindrop = document.createElement('img')
-    raindrop.setAttribute('src', "https://jeremy-diamond.github.io/wdd230/temple/images/raindrop.png");
+    raindrop.setAttribute('src', 'https://jeremy-diamond.github.io/wdd230/temple/images/raindrop.png');
     raindrop.setAttribute('alt', 'Image of a drop of rain');
     raindrop.setAttribute('loading', 'lazy');
-    raindrop.setAttribute('width', '75');
-    raindrop.setAttribute('height', '75');
+    raindrop.setAttribute('width', '25');
+    raindrop.setAttribute('height', '25');
     precipdiv.appendChild(raindrop);
 
-    
-    const pop = `${day.pop * 100}%`;
+    const poppre = day.pop * 100;
+    const poppost = poppre.toFixed(0);
+    const pop = `${poppost}%`;
     //console.log(pop);
+
+    let precippercent = document.createElement('span');
+    precippercent.textContent = pop;
+    precipdiv.appendChild(precippercent)
 
 
     
@@ -132,3 +141,38 @@ function createforcastcard(day){
 function propercase(word){
     return `${word.charAt(0).toUpperCase()}${word.slice(1)}`;
 }
+
+function addfakealert(){
+    
+    if((Math.random() < 0.3) === true){ //30% probability of getting true
+        fakeURL = 'data/fakealert.json'
+        fetch(fakeURL)
+            .then((response)=> response.json())
+            .then((alerts)=> {
+            //console.log(alerts); 
+            const alert = document.createElement('div');
+            document.querySelector('header').prepend(alert) ; 
+            alert.classList.add('alert');
+            
+            const alerttext = document.createElement('p')
+            alerttext.textContent = alerts.description[0].description;
+            
+            const h2alert = document.createElement('h2');
+            h2alert.textContent = `${alerts.description[0].headline}!`;
+            alert.append(h2alert);
+            alert.append(alerttext)
+
+            const closebutton = document.createElement('span');
+            closebutton.classList.add('closealert');
+            closebutton.innerHTML = '&times';
+            closebutton.addEventListener('click', () => {alert.classList.add('hide')}, false);
+            h2alert.append(closebutton);
+
+        });
+    }else{
+        return
+    }
+}
+
+
+

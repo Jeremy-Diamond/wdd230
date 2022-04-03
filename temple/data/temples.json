@@ -1,0 +1,54 @@
+{
+    "temples": [
+      {
+        "Name": "Chicago Illinois Temple",
+        "address":{ 
+            "street:": "4151 W Lake Ave",
+            "city": "Glenview 60025-1240",
+            "state": "IL",
+            "zip": 60025
+        },
+        "phone": "(1) 847-299-6500",
+        "websiteURL": "https://diamondhomes.com",
+        "email": "contact@chicagotemple.com",
+        "services": [
+            "Clothing rental available", 
+            "No cafeteria available", 
+            "No Patron housing available", 
+            "Distribution center nearby" 
+        ],
+        "closures": [
+            "Saturday, 2 April 2022",
+            "Monday, 29 August 2022 - Monday, 12 September 2022",
+            "Saturday, 1 October 2022",
+            "Thursday, 24 November 2022 - Friday, 25 November 2022",
+            "Saturday, 24 December 2022 (Limited Operations)",
+            "Saturday, 31 December 2022 (Limited Operations)"
+        ],
+        "history":[
+            {
+                "event": "Announced",
+                "date" : "1 April 1981"
+            },
+            {
+                "event": "Groundbreaking",
+                "date" : "13 August 1983"
+            },
+            {
+                "event": "Dedicated",
+                "date" : "1 9 August 1985"
+            },
+            {
+                "event": "Rededicated",
+                "date" : "8 October 1989"
+            }
+        ],
+        "ordinanceschedule":"By Appointment Only",
+        "sessionschedule":"By Appointment Only",
+        "imageurl": "https://jeremy-diamond.github.io/wdd230/temple/images/chicagotemple.jpg"
+      }
+    ]
+}
+
+
+

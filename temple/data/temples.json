@@ -1,7 +1,7 @@
 {
     "temples": [
       {
-        "Name": "Chicago Illinois Temple",
+        "name": "Chicago Illinois Temple",
         "address":{ 
             "street:": "4151 W Lake Ave",
             "city": "Glenview 60025-1240",
@@ -9,8 +9,8 @@
             "zip": 60025
         },
         "phone": "(1) 847-299-6500",
-        "websiteURL": "https://diamondhomes.com",
-        "email": "contact@chicagotemple.com",
+        "websiteURL": "https://chicagotemple.org",
+        "email": "contact@chicagotemple.org",
         "services": [
             "Clothing rental available", 
             "No cafeteria available", 
@@ -45,7 +45,7 @@
         ],
         "ordinanceschedule":"By Appointment Only",
         "sessionschedule":"By Appointment Only",
-        "imageurl": "https://jeremy-diamond.github.io/wdd230/temple/images/chicagotemple.jpg"
+        "imageurl": "https://jeremy-diamond.github.io/wdd230/temple/images/chicagotemple.jpeg"
       }
     ]
 }

@@ -7,8 +7,7 @@ fetch(apiURL)
         
         //DOCUMENTATION SAID THAT IF THERE ARE NO ALERTS  THEY ARE NOT PART OF THE RESPONCE, SO I USED THE SAMPLE
         addfakealert();
-        const closebutton = document.querySelector('closealert')  
-
+        
         const currenttemp = jsObject.current.temp;
         const displaytemp = currenttemp.toFixed(1);
 

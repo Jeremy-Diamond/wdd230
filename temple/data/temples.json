@@ -3,8 +3,8 @@
       {
         "name": "Chicago Illinois Temple",
         "address":{ 
-            "street:": "4151 W Lake Ave",
-            "city": "Glenview 60025-1240",
+            "street": "4151 W Lake Ave",
+            "city": "Glenview 60025",
             "state": "IL",
             "zip": 60025
         },

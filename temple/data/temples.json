@@ -1,176 +1,177 @@
 {
     "temples": [
-      {"name": "Chicago Illinois Temple",
-        "address":{ 
-            "street": "4151 W Lake Ave",
-            "city": "Glenview",
-            "state": "IL",
-            "zip": 60025
+        {"name": "Provo City Center Temple",
+            "address":{ 
+                "street": "50 South University Ave",
+                "city": "Provo",
+                "state": "UT",
+                "zip": 84601
+            },
+            "phone": "(1) 801-343-2700",
+            "websiteURL": "https://churchofjesuschristtemples.org/provo-city-center-temple/",
+            "email": "contact@provocitytemple.org",
+            "services": [
+                "Clothing rental available", 
+                "No cafeteria available", 
+                "No patron housing available", 
+                "Distribution center nearby" 
+            ],
+            "closures": [
+                "Monday, 20 June 2022 - Monday, 4 July 2022",
+                "Saturday, 1 October 2022",
+                "Wednesday, 23 November 2022 (Limited Operations)",
+                "Thursday, 24 November 2022",
+                "Monday, 28 November 2022 - Monday, 12 December 2022",
+                "Saturday, 24 December 2022",
+                "Saturday, 31 December 2022"
+            ],
+            "history":[
+                {
+                    "event": "Announced",
+                    "date" : "1 October 2011"
+                },
+                {
+                    "event": "Groundbreaking",
+                    "date" : "13 12 May 2012"
+                },
+                {
+                    "event": "Dedicated",
+                    "date" : "20 March 2016"
+                }
+            ],
+            "ordinanceschedule":"By Appointment Only",
+            "sessionschedule":"By Appointment Only",
+            "imageurl": "https://jeremy-diamond.github.io/wdd230/temple/images/provocitycenter.jpeg"
+            },
+        {"name": "Chicago Illinois Temple",
+            "address":{ 
+                "street": "4151 W Lake Ave",
+                "city": "Glenview",
+                "state": "IL",
+                "zip": 60025
+            },
+            "phone": "(1) 847-299-6500",
+            "websiteURL": "https://churchofjesuschristtemples.org/chicago-illinois-temple/",
+            "email": "contact@chicagotemple.org",
+            "services": [
+                "Clothing rental available", 
+                "No cafeteria available", 
+                "No patron housing available", 
+                "Distribution center nearby" 
+            ],
+            "closures": [
+                "Saturday, 2 April 2022",
+                "Monday, 29 August 2022 - Monday, 12 September 2022",
+                "Saturday, 1 October 2022",
+                "Thursday, 24 November 2022 - Friday, 25 November 2022",
+                "Saturday, 24 December 2022 (Limited Operations)",
+                "Saturday, 31 December 2022 (Limited Operations)"
+            ],
+            "history":[
+                {
+                    "event": "Announced",
+                    "date" : "1 April 1981"
+                },
+                {
+                    "event": "Groundbreaking",
+                    "date" : "13 August 1983"
+                },
+                {
+                    "event": "Dedicated",
+                    "date" : "1 9 August 1985"
+                },
+                {
+                    "event": "Rededicated",
+                    "date" : "8 October 1989"
+                }
+            ],
+            "ordinanceschedule":"By Appointment Only",
+            "sessionschedule":"By Appointment Only",
+            "imageurl": "https://jeremy-diamond.github.io/wdd230/temple/images/chicagotemple.jpeg"
         },
-        "phone": "(1) 847-299-6500",
-        "websiteURL": "https://churchofjesuschristtemples.org/chicago-illinois-temple/",
-        "email": "contact@chicagotemple.org",
-        "services": [
-            "Clothing rental available", 
-            "No cafeteria available", 
-            "No patron housing available", 
-            "Distribution center nearby" 
-        ],
-        "closures": [
-            "Saturday, 2 April 2022",
-            "Monday, 29 August 2022 - Monday, 12 September 2022",
-            "Saturday, 1 October 2022",
-            "Thursday, 24 November 2022 - Friday, 25 November 2022",
-            "Saturday, 24 December 2022 (Limited Operations)",
-            "Saturday, 31 December 2022 (Limited Operations)"
-        ],
-        "history":[
-            {
-                "event": "Announced",
-                "date" : "1 April 1981"
+
+        {"name": "Palmyra New York Temple",
+            "address":{ 
+                "street": "2720 Temple Rd",
+                "city": "Palmyra",
+                "state": "NY",
+                "zip": 14522
             },
-            {
-                "event": "Groundbreaking",
-                "date" : "13 August 1983"
-            },
-            {
-                "event": "Dedicated",
-                "date" : "1 9 August 1985"
-            },
-            {
-                "event": "Rededicated",
-                "date" : "8 October 1989"
-            }
-        ],
-        "ordinanceschedule":"By Appointment Only",
-        "sessionschedule":"By Appointment Only",
-        "imageurl": "https://jeremy-diamond.github.io/wdd230/temple/images/chicagotemple.jpeg"
-      },
-      {"name": "Provo City Center Temple",
-        "address":{ 
-            "street": "50 South University Ave",
-            "city": "Provo",
-            "state": "UT",
-            "zip": 84601
+            "phone": "(1) 315-597-6001",
+            "websiteURL": "https://churchofjesuschristtemples.org/palmyra-new-york-temple/",
+            "email": "contact@palmyratemple.org",
+            "services": [
+                "No clothing rental available", 
+                "No cafeteria available", 
+                "No Patron housing available", 
+                "Distribution center nearby" 
+            ],
+            "closures": [
+                "Monday, 4 July 2022",
+                "Monday, 12 September 2022 - Monday, 26 September 2022",
+                "Saturday, 1 October 2022",
+                "Thursday, 24 November 2022",
+                "Saturday, 24 December 2022",
+                "Saturday, 31 December 2022"
+            ],
+            "history":[
+                {
+                    "event": "Announced",
+                    "date" : "21 February 1999"
+                },
+                {
+                    "event": "Groundbreaking",
+                    "date" : "25 May 1999"
+                },
+                {
+                    "event": "Dedicated",
+                    "date" : "6 April 2000"
+                }
+            ],
+            "ordinanceschedule":"By Appointment Only",
+            "sessionschedule":"By Appointment Only",
+            "imageurl": "https://jeremy-diamond.github.io/wdd230/temple/images/palmyratemple.jpeg"
         },
-        "phone": "(1) 801-343-2700",
-        "websiteURL": "https://churchofjesuschristtemples.org/provo-city-center-temple/",
-        "email": "contact@provocitytemple.org",
-        "services": [
-            "Clothing rental available", 
-            "No cafeteria available", 
-            "No patron housing available", 
-            "Distribution center nearby" 
-        ],
-        "closures": [
-            "Monday, 20 June 2022 - Monday, 4 July 2022",
-            "Saturday, 1 October 2022",
-            "Wednesday, 23 November 2022 (Limited Operations)",
-            "Thursday, 24 November 2022",
-            "Monday, 28 November 2022 - Monday, 12 December 2022",
-            "Saturday, 24 December 2022",
-            "Saturday, 31 December 2022"
-        ],
-        "history":[
-            {
-                "event": "Announced",
-                "date" : "1 October 2011"
+        {"name": "San Diego California Temple",
+            "address":{ 
+                "street": "7474 Charmant Dr",
+                "city": "San Diego",
+                "state": "CA",
+                "zip": 92122
             },
-            {
-                "event": "Groundbreaking",
-                "date" : "13 12 May 2012"
-            },
-            {
-                "event": "Dedicated",
-                "date" : "20 March 2016"
-            }
-        ],
-        "ordinanceschedule":"By Appointment Only",
-        "sessionschedule":"By Appointment Only",
-        "imageurl": "https://jeremy-diamond.github.io/wdd230/temple/images/provocitycenter.jpeg"
-      },
-      {"name": "Palmyra New York Temple",
-        "address":{ 
-            "street": "2720 Temple Rd",
-            "city": "Palmyra",
-            "state": "NY",
-            "zip": 14522
-        },
-        "phone": "(1) 315-597-6001",
-        "websiteURL": "https://churchofjesuschristtemples.org/palmyra-new-york-temple/",
-        "email": "contact@palmyratemple.org",
-        "services": [
-            "No clothing rental available", 
-            "No cafeteria available", 
-            "No Patron housing available", 
-            "Distribution center nearby" 
-        ],
-        "closures": [
-            "Monday, 4 July 2022",
-            "Monday, 12 September 2022 - Monday, 26 September 2022",
-            "Saturday, 1 October 2022",
-            "Thursday, 24 November 2022",
-            "Saturday, 24 December 2022",
-            "Saturday, 31 December 2022"
-        ],
-        "history":[
-            {
-                "event": "Announced",
-                "date" : "21 February 1999"
-            },
-            {
-                "event": "Groundbreaking",
-                "date" : "25 May 1999"
-            },
-            {
-                "event": "Dedicated",
-                "date" : "6 April 2000"
-            }
-        ],
-        "ordinanceschedule":"By Appointment Only",
-        "sessionschedule":"By Appointment Only",
-        "imageurl": "https://jeremy-diamond.github.io/wdd230/temple/images/palmyratemple.jpeg"
-      },
-      {"name": "San Diego California Temple",
-        "address":{ 
-            "street": "7474 Charmant Dr",
-            "city": "San Diego",
-            "state": "CA",
-            "zip": 92122
-        },
-        "phone": "(1) 858-622-0991",
-        "websiteURL": "https://churchofjesuschristtemples.org/san-diego-california-temple/",
-        "email": "contact@sandiegotemple.org",
-        "services": [
-            "Clothing rental available", 
-            "No cafeteria available", 
-            "No patron housing available", 
-            "Distribution center nearby" 
-        ],
-        "closures": [
-            "Saturday, 1 October 2022",
-            "Wednesday, 23 November 2022 - Thursday, 24 November 2022",
-            "Saturday, 24 December 2022",
-            "Saturday, 31 December 2022"
-        ],
-        "history":[
-            {
-                "event": "Announced",
-                "date" : "7 April 1984"
-            },
-            {
-                "event": "Groundbreaking",
-                "date" : "27 February 1988"
-            },
-            {
-                "event": "Dedicated",
-                "date" : "25 April 1993"
-            }
-        ],
-        "ordinanceschedule":"By Appointment Only",
-        "sessionschedule":"By Appointment Only",
-        "imageurl": "https://jeremy-diamond.github.io/wdd230/temple/images/chicagotemple.jpeg"
-      }
+            "phone": "(1) 858-622-0991",
+            "websiteURL": "https://churchofjesuschristtemples.org/san-diego-california-temple/",
+            "email": "contact@sandiegotemple.org",
+            "services": [
+                "Clothing rental available", 
+                "No cafeteria available", 
+                "No patron housing available", 
+                "Distribution center nearby" 
+            ],
+            "closures": [
+                "Saturday, 1 October 2022",
+                "Wednesday, 23 November 2022 - Thursday, 24 November 2022",
+                "Saturday, 24 December 2022",
+                "Saturday, 31 December 2022"
+            ],
+            "history":[
+                {
+                    "event": "Announced",
+                    "date" : "7 April 1984"
+                },
+                {
+                    "event": "Groundbreaking",
+                    "date" : "27 February 1988"
+                },
+                {
+                    "event": "Dedicated",
+                    "date" : "25 April 1993"
+                }
+            ],
+            "ordinanceschedule":"By Appointment Only",
+            "sessionschedule":"By Appointment Only",
+            "imageurl": "https://jeremy-diamond.github.io/wdd230/temple/images/chicagotemple.jpeg"
+        }
     ]
 }
 

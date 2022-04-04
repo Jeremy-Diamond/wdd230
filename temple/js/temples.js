@@ -65,7 +65,7 @@ fetch(apiURL)
     
         // Create Logo images
         templeimage.setAttribute('src', temple.imageurl);
-        templeimage.setAttribute('alt', `Logo for ${temple.templeName}`);
+        templeimage.setAttribute('alt', `Image of ${temple.name}`);
         templeimage.setAttribute('loading', 'lazy');
         templeimage.setAttribute('width', '500');
         //templeimage.setAttribute('height', '150');

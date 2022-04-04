@@ -34,4 +34,30 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    .templecard{
+        margin: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 50px;
+        border-bottom: #90722c dashed 3px;
+    }
+
+    .templecard:last-child{
+        border-bottom: none;
+    }
+
+    .schedulelist{
+        grid-column: 2;
+        grid-row: 2/4;
+    }
+
+    .templecard h1{
+        grid-row: 1;
+        grid-column: 1/3;
+    }
+
+    .templeimage{
+        border: #90722c solid 10px
+    }
+    
+
 }

@@ -26,7 +26,6 @@ fetch(apiURL)
         let address = document.createElement('p');
         let phone = document.createElement('p');
         let email = document.createElement('p');
-        let website = document.createElement('p');
         let templeimage = document.createElement('img');
         templeimage.classList.add("templeimage");
         
@@ -55,7 +54,13 @@ fetch(apiURL)
         contactsection.appendChild(email);
         
         // add website 
-        website.textContent = `Website: ${temple.websiteURL}`;
+        let website = document.createElement('a');
+        //let webURL = document.createElement('a');
+        website.href = temple.websiteURL;
+        website.textContent = "Go To Site";
+        website.target = "blank";
+        //website.textContent = `Website: ${temple.websiteURL}`;
+        website.innerHTML = "Go To Temple Website Site"
         contactsection.appendChild(website);
     
         // Create Logo images

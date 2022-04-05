@@ -38,12 +38,9 @@
         margin: 20px;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 50px;
-        border-bottom: #90722c dashed 3px;
     }
 
-    .templecard:last-child{
-        border-bottom: none;
-    }
+ 
 
     .schedulelist{
         grid-column: 2;

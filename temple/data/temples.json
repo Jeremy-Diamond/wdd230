@@ -1,6 +1,7 @@
 {
     "temples": [
-        {"name": "Provo City Center Temple",
+        {
+            "name": "Provo City Center Temple",
             "address":{ 
                 "street": "50 South University Ave",
                 "city": "Provo",
@@ -170,7 +171,7 @@
             ],
             "ordinanceschedule":"By Appointment Only",
             "sessionschedule":"By Appointment Only",
-            "imageurl": "https://jeremy-diamond.github.io/wdd230/temple/images/chicagotemple.jpeg"
+            "imageurl": "https://jeremy-diamond.github.io/wdd230/temple/images/sandiegotemple.jpeg"
         }
     ]
 }

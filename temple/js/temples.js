@@ -1,16 +1,15 @@
 //const apiURL = 'data/temples.json';
 const apiURL = 'https://jeremy-diamond.github.io/wdd230/temple/data/temples.json';
 const forcastcontainer = document.querySelector('.forcastcontainer');
-const templemain = document.querySelector('.templesmain')
+const templemain = document.querySelector('.templesmain');
+let likebtn = ""
 
 fetch(apiURL)
     .then((response)=> response.json())
     .then((templelist)=> {
-        //console.log(templelist)
-        console.log(templelist.temples[0])
-
-        let templecount = Array.from(Array(templelist.length).keys());
-        //console.log(templelist)
+        //console.log(templelist);
+        let templecount = Array.from(Array(templelist.temples.length).keys());
+        //console.log(templecount)
         templecount.forEach(temple => {
             createtemplecards(templelist.temples[temple])
         });
@@ -156,19 +155,42 @@ fetch(apiURL)
         temple.services.forEach(inservice => {
             let service = document.createElement('li');
             service.classList.add('service');
-            console.log(service)
+            //console.log(service)
             service.textContent = (`${inservice}`);
             templeservices.appendChild(service);
         });
       
+        /*----Like Button-----*/
+        likebtn = document.createElement('button');
+        likebtn.classList.add('likebtn');
+        likebtn.id = `btn${temple.name.replace(/ /g, "")}`;
+        likebtn.addEventListener('click',()=>{
+            likestatus(temple.name.replace(/ /g, ""))
+        })
+        
+        const likespan = document.createElement('span');
+        likespan.textContent = 'Like';
+        likespan.id = `like${temple.name.replace(/ /g, "")}`;
+        likebtn.appendChild(likespan);
+        
+        let likedtemplelist = JSON.parse(localStorage.getItem('strippedtemplename')) || [];
+        if(likedtemplelist.includes(temple.name.replace(/ /g, ""))){
+            likespan.classList.add('liked'); 
+            likebtn.classList.add('btnliked'); 
+        } else{
+            likespan.classList.add('likedefault');
+        }
+        
+        //console.log(likebtn)
         
         // Add/append the section(card) with the h2 element
         card.appendChild(h1);
         card.appendChild(templeimage);
-        card.appendChild(contactsection)
-        card.appendChild(servicesection)
-        card.appendChild(schedulecard)
-        card.appendChild(historycard)
+        card.appendChild(contactsection);
+        card.appendChild(servicesection);
+        card.appendChild(schedulecard);
+        card.appendChild(historycard);
+        card.appendChild(likebtn);
 
 
         
@@ -176,4 +198,36 @@ fetch(apiURL)
         // Add/append the existing HTML div with the cards class with the section(card)
         //console.log(card)
         templemain.appendChild(card); 
+
+    
     }
+
+function likestatus(strippedtemplename){
+    
+    // retrieve temple list (Or create a blank array if there isn't one saved yet),
+    let likedtemples = JSON.parse(localStorage.getItem('strippedtemplename')) || [];
+    //console.log(strippedtemplename)
+    if(likedtemples.includes(strippedtemplename)){
+        //console.log('yup');
+        document.querySelector(`#like${strippedtemplename}`).textContent = "Like";
+        newlikedtemples = likedtemples.filter((value)=>{
+            //console.log(`testvalue${value.value}`);
+            //console.log(strippedtemplename);
+            return(value != strippedtemplename);
+        })
+        localStorage.setItem('strippedtemplename', JSON.stringify(newlikedtemples));
+        //console.log(newlikedtemples);
+        
+    }else{
+        //console.log('nope');
+        document.querySelector(`#like${strippedtemplename}`).textContent = "Liked!";
+        // add temple
+        likedtemples.push(strippedtemplename);
+        //push it back to local Storage
+        localStorage.setItem('strippedtemplename', JSON.stringify(likedtemples));
+        }
+    document.querySelector(`#like${strippedtemplename}`).classList.toggle('likedefault');
+    document.querySelector(`#like${strippedtemplename}`).classList.toggle('liked');
+    document.querySelector(`#btn${strippedtemplename}`).classList.toggle('btnliked');
+
+}

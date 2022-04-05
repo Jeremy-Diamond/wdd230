@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jeremy Diamond">
+    <meta name="description" content="Temple Inn & Suites">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script defer src="js/getdates.js"></script>
+    <script defer src="js/navigation.js"></script>
+    <script defer src="js/weather.js"></script>
+    <title>Temple Inn & Suites</title>
+</head>
+<body>
+    <header>
+        <section id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="temples.html">Temples</a>
+              <a href="reservation.html">Reservation</a>
+              <a href="#">Services</a>
+              <a href="#">Contact Us</a>
+            </div>
+        </section>
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>         
+        <section>
+            <a href="index.html"><img src="images/templeLogo(1).webp" alt="The Temple Inn and Suites Logo" height="200"></a>
+        </section>
+        <section class="reserveform"> 
+            <a class="reservebtn" href="#">Reserve a Room</a> 
+            <form method="get" action="reservation.html">            
+            <fieldset >
+                <label class="top">Arrival <input type="date" name="checkin" required>
+                <label class="top">Departure <input type="date" name="checkout" required></label>
+                <label class="top">Number of Adults <input type="number" name="adultcount" required></label>
+                <label class="top">Number of Children <input type="number" name="childcount" required></label>
+                <input type="submit" value="Check Availability" class="reservesubmit">
+            </fieldset>
+            </form>
+        </section>
+        </header>
+    <main>
+           <div class="reference/attributions">
+               <h1>Reference/Attributions</h1>
+               <ul>Attributions</ul>
+                <li>San Diego California Temple images and content 
+                    <span>
+                        <a href="https://www.churchofjesuschrist.org/temples/details/san-diego-california-temple?lang=eng" target="blank"> https://www.churchofjesuschrist.org/temples/details/san-diego-california-temple?lang=eng</a>
+                    </span>
+                </li>   
+                <li>Provo City Temple images and content 
+                    <span>
+                        <a href="https://www.churchofjesuschrist.org/temples/details/provo-city-center-temple?lang=eng" target="blank"> https://www.churchofjesuschrist.org/temples/details/provo-city-center-temple?lang=eng</a>
+                    </span>
+                </li>   
+                <li>Chicago Illinois Temple images and content 
+                    <span>
+                        <a href="https://www.churchofjesuschrist.org/temples/details/chicago-illinois-temple?lang=eng" target="blank"> https://www.churchofjesuschrist.org/temples/details/chicago-illinois-temple?lang=eng</a>
+                    </span>
+                </li>   
+                <li>San Diego California Temple images and content 
+                    <span>
+                        <a href="https://www.churchofjesuschrist.org/temples/details/san-diego-california-temple?lang=eng" target="blank"> https://www.churchofjesuschrist.org/temples/details/san-diego-california-temple?lang=eng</a>
+                    </span>
+                </li>   
+           </div>
+    </main>
+    <footer>
+        <section class="sitefooter">
+            <section class="contactus">
+                <a href="#">Contact Us</a>
+                <div id="socialmedia">
+                    <a href="https://facebook.com" target="blank"><img src="images/facebook.ico" alt="Facebook Logo" width="25"></a>
+                    <a href="https://twitter.com" target="blank"><img src="images/twitter.ico" alt="Twitter Logo" width=25"></a>
+                    <a href="https://linkedin.com" target="blank"><img src="images/linkedin.ico" alt="Linked in Logo" width="25"></a>
+                    <a href="https://instagram.com" target="blank"><img src="images/instagram.ico" alt="Instagram Logo" width="25"></a>
+                </div> 
+                <p>Phone (800)123-1234</p>
+            </section>
+            <section class="footerlogo">
+                <a href="index.html"><img src="images/templeLogoReverse.webp" alt="The Temple Inn and Suites Logo" height="200"></a>
+            </section>
+            <section class="footeraddress">
+                <h2>Temple Inn & Suites</h2>
+                <p>4800 Montgomery Ln #300</p>
+                <p>Bethesda, MD 20814</p>
+                <a href="https://goo.gl/maps/ybqf2BQtjanrC5vm8" target="blank">Take Me There</a>
+            </section>    
+        </section>
+        <section class="myinfo">
+            Jeremy Diamond | WDD230 Final Project | <span id="lastUpdated"></span>
+        </section> 
+      </footer>
+</body>
+</html>
+
+

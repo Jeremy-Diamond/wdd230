@@ -102,12 +102,9 @@
     .highlightcontainer{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        justify-content: first baseline;
     }
 
     .highlightcontainer h1{
         grid-column: 1/3;
     }
-        
-
 }

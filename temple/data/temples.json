@@ -42,7 +42,7 @@
             ],
             "ordinanceschedule":"By Appointment Only",
             "sessionschedule":"By Appointment Only",
-            "imageurl": "https://jeremy-diamond.github.io/wdd230/temple/images/provocitycenter.webp"
+            "imageurl": "https://jeremy-diamond.github.io/wdd230/temple/images/provocitycenterreduced.webp"
             },
         {"name": "Chicago Illinois Temple",
             "address":{ 
@@ -88,7 +88,7 @@
             ],
             "ordinanceschedule":"By Appointment Only",
             "sessionschedule":"By Appointment Only",
-            "imageurl": "https://jeremy-diamond.github.io/wdd230/temple/images/chicagotemple.webp"
+            "imageurl": "https://jeremy-diamond.github.io/wdd230/temple/images/chicagotemplereduced.webp"
         },
 
         {"name": "Palmyra New York Temple",
@@ -131,7 +131,7 @@
             ],
             "ordinanceschedule":"By Appointment Only",
             "sessionschedule":"By Appointment Only",
-            "imageurl": "https://jeremy-diamond.github.io/wdd230/temple/images/palmyratemple.webp"
+            "imageurl": "https://jeremy-diamond.github.io/wdd230/temple/images/palmyratempleredreduced.webp"
         },
         {"name": "San Diego California Temple",
             "address":{ 
@@ -171,7 +171,7 @@
             ],
             "ordinanceschedule":"By Appointment Only",
             "sessionschedule":"By Appointment Only",
-            "imageurl": "https://jeremy-diamond.github.io/wdd230/temple/images/sandiegotemple.webp"
+            "imageurl": "https://jeremy-diamond.github.io/wdd230/temple/images/sandiegotemplereduced.webp"
         }
     ]
 }

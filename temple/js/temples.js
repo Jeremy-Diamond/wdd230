@@ -62,7 +62,7 @@ fetch(apiURL)
         website.innerHTML = "Go To Temple Website Site"
         contactsection.appendChild(website);
     
-        // Create Logo images
+        // Create images
         templeimage.setAttribute('src', temple.imageurl);
         templeimage.setAttribute('alt', `Image of ${temple.name}`);
         templeimage.setAttribute('loading', 'lazy');

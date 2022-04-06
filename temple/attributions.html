@@ -15,7 +15,6 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <script defer src="js/getdates.js"></script>
     <script defer src="js/navigation.js"></script>
-    <script defer src="js/weather.js"></script>
     <title>Temple Inn & Suites</title>
 </head>
 <body>
@@ -23,10 +22,13 @@
         <section id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
+              <a class="selectedpage" href="index.html">Home</a>
               <a href="temples.html">Temples</a>
-              <a href="reservation.html">Reservation</a>
-              <a href="#">Services</a>
-              <a href="#">Contact Us</a>
+              <a href="reservation.html">Reservations</a>
+              <a href="services.html">Services</a>
+              <a href="reception.html">Receptions</a>
+              <a href="fulltime.html">Long Term</a>
+              <a href="contact.html">Contact Us</a>
             </div>
         </section>
           <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>         
@@ -50,6 +52,11 @@
            <div class="reference/attributions">
                <h1>Reference/Attributions</h1>
                <ul>Attributions</ul>
+                <li>Weather Information
+                    <span>
+                        <a href="https://openweathermap.org/api/one-call-api" target="blank"> https://openweathermap.org/api/one-call-api</a>
+                    </span>
+                </li>   
                 <li>San Diego California Temple images and content 
                     <span>
                         <a href="https://www.churchofjesuschrist.org/temples/details/san-diego-california-temple?lang=eng" target="blank"> https://www.churchofjesuschrist.org/temples/details/san-diego-california-temple?lang=eng</a>
@@ -75,14 +82,14 @@
     <footer>
         <section class="sitefooter">
             <section class="contactus">
-                <a href="#">Contact Us</a>
+                <p>Phone (800)123-1234</p>
                 <div id="socialmedia">
                     <a href="https://facebook.com" target="blank"><img src="images/facebook.ico" alt="Facebook Logo" width="25"></a>
                     <a href="https://twitter.com" target="blank"><img src="images/twitter.ico" alt="Twitter Logo" width=25"></a>
                     <a href="https://linkedin.com" target="blank"><img src="images/linkedin.ico" alt="Linked in Logo" width="25"></a>
                     <a href="https://instagram.com" target="blank"><img src="images/instagram.ico" alt="Instagram Logo" width="25"></a>
                 </div> 
-                <p>Phone (800)123-1234</p>
+                <a href="contact.html">Contact Us</a>
             </section>
             <section class="footerlogo">
                 <a href="index.html"><img src="images/templeLogoReverse.webp" alt="The Temple Inn and Suites Logo" height="200"></a>

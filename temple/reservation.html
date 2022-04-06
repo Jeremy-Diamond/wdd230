@@ -23,10 +23,13 @@
         <section id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
+              <a href="index.html">Home</a>
               <a href="temples.html">Temples</a>
-              <a href="reservation.html">Reservation</a>
-              <a href="#">Services</a>
-              <a href="#">Contact Us</a>
+              <a class="selectedpage" href="reservation.html">Reservations</a>
+              <a href="services.html">Services</a>
+              <a href="reception.html">Receptions</a>
+              <a href="fulltime.html">Long Term</a>
+              <a href="contact.html">Contact Us</a>
             </div>
         </section>
           <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>         
@@ -48,20 +51,108 @@
         </header>
     <main>
            <section class="resmain">
-
+                <form class="resform" method="get" action="thankyou.html" >
+                    <fieldset class="form">
+                        <legend>Stay Information</legend>
+                        <label class="top">Arrival* <input id="checkin" type="date" name="checkin" required value=""></label>
+                        <label class="top">Departure* <input id="checkout" type="date" name="checkout" required></label>
+                        <label class="top">Number of Adults* <input id="adultcount" type="number" name="adultcount" required></label>
+                        <label class="top">Number of Children* <input id="childcount" type="number" name="childcount" required required></label>
+                    </fieldset>
+                    <fieldset class="form">
+                        <legend>Room Information</legend>
+                        <div class="roomform">What temple are you visiting?
+                            <label><input type="radio" name="templechoice" value="provo" required>Provo Temple</label>
+                            <label><input type="radio" name="templechoice" value="chicago">Chicago Temple</label>
+                            <label><input type="radio" name="templechoice" value="sandiego">San Diego Temple</label>
+                            <label><input type="radio" name="templechoice" value="palmyra">Palmyra Temple</label>
+                        </div>
+                        <div class="roomform">What type of room would you like?
+                            <label><input type="radio" name="roomtype" value="Suite" required>Executive Suite</label>
+                            <label><input type="radio" name="roomtype" value="1King">Single King Bed</label>
+                            <label><input type="radio" name="roomtype" value="2Queens">Double Queen Beds</label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form">
+                        <legend>Your Information</legend>
+                        <label class="top">Full Name*<input type="text" name="fullname" required></label>
+                        <label class="top">Email*<input type="email" name="email" required></label>
+                        <label class="top">Phone<input type="tel" name="phone"></label>
+                        <label class="top">Home State or Country<input type="text" name="state"></label>
+                        <label class="top">Special Accommodations<textarea name="accommodations" cols="30" rows="10"> </textarea> </label>
+                    </fieldset>
+                    <input type="submit" value="Get Room" class="reservesubmit form">
+                </form>
+                <div class="roomcontainer">
+                    <div class="roomcard">
+                        <h2>Executive Suite</h2>
+                        <img class="roomimg" src="images/suite.png" alt="Image of Hotel Suite" width="600">
+                            <div class="roominfo" >
+                                <h3>Room Feratures</h3>
+                                <ul>
+                                    <li>King Bed</li>
+                                    <li>Work Desk And Chair</li>
+                                    <li>Mp3 Alarm</li>
+                                    <li>In-Room Safe</li>
+                                    <li>Walk In Shower</li>
+                                    <li>Wider Bathroom</li>
+                                    <li>Refrigerator</li>
+                                    <li>55-Inch Flat Screen Television</li>
+                                </ul>
+                            </div>
+                    </div>
+                    <div class="roomcard">
+                        <h2>Single King</h2>
+                        <img class="roomimg" src="images/oneking.png" alt="Image of single king room" width="600">
+                            <div class="roominfo" >
+                                <h3>Room Feratures</h3>
+                                <ul>
+                                    <li>King Bed</li>
+                                    <li>Work Desk And Chair</li>
+                                    <li>Mp3 Alarm</li>
+                                    <li>40-Inch Flat Screen Television</li>
+                                </ul>
+                            </div>
+                    </div>
+                    <div class="roomcard">
+                        <h2>Double Queen</h2>
+                        <img class="roomimg" src="images/twoqueens.png" alt="Image of double queen room" width="600">
+                            <div class="roominfo" >
+                                <h3>Room Feratures</h3>
+                                <ul>
+                                    <li>Two Queen Beds</li>
+                                    <li>Mp3 Alarm</li>
+                                    <li>40-Inch Flat Screen Television</li>
+                                </ul>
+                            </div>
+                    </div>
+                    
+                </div>
+                <div class="hotelfeatures">
+                    <h2>All Reservations Offer</h2>
+                    <ul>
+                        <li>Breakfast</li>
+                        <li>Workout room</li>
+                        <li>Indoor pool</li>
+                        <li>WiFi high-speed internet access and smart TVs</li>
+                        <li>Parking</li>
+                        <li>Temple shuttle</li>
+                        <li>Family history consultation and family ordinance card service</li>
+                    </ul>
+                </div>
            </section>
     </main>
     <footer>
         <section class="sitefooter">
             <section class="contactus">
-                <a href="#">Contact Us</a>
+                <p>Phone (800)123-1234</p>
                 <div id="socialmedia">
                     <a href="https://facebook.com" target="blank"><img src="images/facebook.ico" alt="Facebook Logo" width="25"></a>
                     <a href="https://twitter.com" target="blank"><img src="images/twitter.ico" alt="Twitter Logo" width=25"></a>
                     <a href="https://linkedin.com" target="blank"><img src="images/linkedin.ico" alt="Linked in Logo" width="25"></a>
-                    <a href="https://instagram.com" target="blank"><img src="images/Instagram.ico" alt="Instagram Logo" width="25"></a>
+                    <a href="https://instagram.com" target="blank"><img src="images/instagram.ico" alt="Instagram Logo" width="25"></a>
                 </div> 
-                <p>Phone (800)123-1234</p>
+                <a href="contact.html">Contact Us</a>
             </section>
             <section class="footerlogo">
                 <a href="index.html"><img src="images/templeLogoReverse.webp" alt="The Temple Inn and Suites Logo" height="200"></a>
@@ -74,10 +165,8 @@
             </section>    
         </section>
         <section class="myinfo">
-            Jeremy Diamond | WDD230 Final Project | <span id="lastUpdated"></span>
+            Jeremy Diamond | WDD230 Final Project | <a href="attributions.html">Attributions</a> |  <span id="lastUpdated"></span>
         </section> 
-      </footer>
+    </footer>
 </body>
 </html>
-
-

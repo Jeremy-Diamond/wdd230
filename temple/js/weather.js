@@ -112,7 +112,7 @@ function createforcastcard(day){
     daycard.appendChild(precipdiv);
 
     let raindrop = document.createElement('img')
-    raindrop.setAttribute('src', 'https://jeremy-diamond.github.io/wdd230/temple/images/raindrop.png');
+    raindrop.setAttribute('src', 'https://jeremy-diamond.github.io/wdd230/temple/images/raindrop.webp');
     raindrop.setAttribute('alt', 'Image of a drop of rain');
     raindrop.setAttribute('loading', 'lazy');
     raindrop.setAttribute('width', '25');

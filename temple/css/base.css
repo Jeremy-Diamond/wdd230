@@ -484,7 +484,7 @@ li{
     border-bottom: none;
 }
 
-.resform .reservesubmit{
+.resform .reservesubmit, .contactsubmit{
     margin: auto;
 }
 

@@ -21,7 +21,7 @@ fetch(apiURL)
         // Create elements to add to the document
         let card = document.createElement('section');
         card.classList.add("templecard")
-        let h1 = document.createElement('h1');
+        let h2 = document.createElement('h2');
         let address = document.createElement('p');
         let phone = document.createElement('p');
         let email = document.createElement('p');
@@ -29,7 +29,7 @@ fetch(apiURL)
         templeimage.classList.add("templeimage");
         
         // Change the textContent property of the h2 element to contain the temple name
-        h1.textContent = temple.name;
+        h2.textContent = temple.name;
      
         // Contact section
         let contactsection = document.createElement('div');
@@ -184,7 +184,7 @@ fetch(apiURL)
         //console.log(likebtn)
         
         // Add/append the section(card) with the h2 element
-        card.appendChild(h1);
+        card.appendChild(h2);
         card.appendChild(templeimage);
         card.appendChild(contactsection);
         card.appendChild(servicesection);

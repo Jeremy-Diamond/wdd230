@@ -17,6 +17,10 @@ header{
     justify-items: center;
 }
 
+h1{
+    margin: 20px;
+}
+
 .selectedpage{
     background-color: rgb(95, 76, 38,80);
 }
@@ -158,7 +162,7 @@ header section:nth-of-type(3){
     color: #ffffff;
     font-size: 1.5rem;
     width: 360px;
-    margin: auto;
+    margin: 10px auto;
 }
 .top{
     display: flex;
@@ -356,13 +360,8 @@ line-height: 3rem;
 .contactcard,
 .servicescard,
 .schedulelist,
-.historylist,
-.templecard h1{
+.historylist{
     padding-left: 30px;
-}
-
-.templecard h2{
-    margin-bottom: 0px;
 }
 
 li{
@@ -489,5 +488,57 @@ li{
     margin: auto;
 }
 
+.servicesmain section, .fulltimemain, .receptionmain, .contactmain{
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 1.3rem;
+    border-bottom: #5F4C26 dashed 3px;
+    padding: 20px;
+    margin: auto;
+}
 
+.fulltimemain:last-child, .receptionmain:last-child, .contactmain:last-child{
+    border-bottom: none;
+}
 
+.servicesmain img, .fulltimemain img, .receptionmain img, .contactmain img{
+    width: 85%;
+    border: #5F4C26 solid 10px;
+    padding: 10px;
+    margin: 0px auto;
+}
+
+.fulltimehighlight, .receptionhighlight, .contacthighlight{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.fulltimehighlight p, .receptionhighlight p, .contacthighlight p{
+    padding: 10px 40px;
+
+}
+
+.thankyou{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.thankyou button{
+    color: black;
+    padding: 10px 20px;
+    border: #5F4C26 solid 3px;
+    border-radius: 10px;
+    margin: 20px auto;
+    background-color: #90722c;
+    width: 300px;
+    justify-self: center;
+}
+
+.thankyou button a{
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+}

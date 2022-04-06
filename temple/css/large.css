@@ -28,6 +28,10 @@
         margin: auto;
     }
 
+    .fulltimehighlight{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     /*  ---USE FOR FULL FORCAST---
     .forcastcontainer{
         grid-row: 2;
